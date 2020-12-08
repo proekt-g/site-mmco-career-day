@@ -1,0 +1,37 @@
+$default-font: "RF Dewi";
+$content-width: 1114px;
+$heightHeader: 60px;
+$heightFooter: 275px;
+$minHeightMain: calc(100vh - (#{$heightHeader} + #{$heightFooter}));
+$mainColor: #fff;
+$mainWeight: 700;
+$mainSize: 20px;
+
+:root {
+    --background-main: #08142e;
+
+    --light-green-type-one: #00ffc2;
+
+    --black-type-one: #12181f;
+    --black-type-two: #070708;
+    --black-type-three: #222222;
+    --black-type-four: #333333;
+
+    --white: #fff;
+    --white-transparency-five: rgba(255, 255, 255, 0.05);
+    --white-transparency-fiftheen: rgba(255, 255, 255, 0.15);
+
+    --light-yellow-type-one: #fff500;
+    --light-yellow-type-two: #ffeb3b;
+    --light-yellow-type-three: #ffd940;
+
+    --dark-blue-type-one: #3636b2;
+    --dark-blue-type-two: #3636b3;
+
+    --orange: #ffaf40;
+
+    --light-grey-type-one: #f2f4f5;
+    --light-grey-type-two: #e1e3e6;
+
+    // --violet: #9536f4;
+}
