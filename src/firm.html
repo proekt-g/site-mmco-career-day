@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <aside class="modal-overlay">
+      <form class="popap__test popap" method="POST" id="test-form">
+        <button class="popap__close">
+          <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path
+              d="M18 15.879l7.425-7.425 2.121 2.121-7.425 7.425 7.425 7.425-2.121 2.121-7.425-7.425-7.425 7.425-2.121-2.121 7.425-7.425-7.425-7.425 2.121-2.121 7.425 7.425z"
+              fill="#fff"
+              opacity=".8"
+            />
+          </svg>
+        </button>
+        <div class="popap__content">
+          <div class="popap__content-stage popap__content-stage--start">
+            <img class="popap__content-picture" src="assets/images/start-test.jpg" alt="" />
+            <div class="popap__content-text">Запись на</div>
+            <div class="popap__content-date">18 декабря, 10:00</div>
+            <div class="popap__content-title">Тест для собеседования</div>
+            <div class="popap__content-body">
+              <div class="popap__content-box">
+                <div class="popap__content-box-title">30 вопросов</div>
+                <div class="popap__content-box-text">
+                  Всего 30 вопросов. Для успеха вам нужно <span class="popap__content-box-text--bold">25 правильных ответов.</span>
+                </div>
+              </div>
+              <div class="popap__content-box">
+                <div class="popap__content-box-title">30 минут</div>
+                <div class="popap__content-box-text">
+                  Время прохождения теста <span class="popap__content-box-text--bold">ограничено</span> и составляет 30 минут.
+                </div>
+              </div>
+              <div class="popap__content-box">
+                <div class="popap__content-box-title">1 попытка</div>
+                <div class="popap__content-box-text">
+                  Только 1 попытка на прохождение теста <span class="popap__content-box-text--bold">от каждой юрфирмы.</span>
+                </div>
+              </div>
+            </div>
+            <button class="button">Начать тест</button>
+          </div>
+          <div class="popap__content-stage popap__content-stage--hidden" >
+            <div class="popap__content-indicator"></div>
+            <div class="popap__content-head">
+              <div class="popap__content-text">Запись на</div>
+              <div class="popap__content-date">18 декабря, 10:00</div>
+              <div class="popap__content-text popap__content-text--opacity">Осталось времени:</div>
+              <div class="popap__content-timer">23:09</div>
+            </div>
+            <div class="popap__content-amount popap__content-amount--current">5</div>
+            <div class="popap__content-amount">/</div>
+            <div class="popap__content-amount popap__content-amount--all">30</div>
+            <div class="popap__content-step popap__content-step--hidden" data-number-question="1">
+              <div class="popap__content-question">Какие из перечисленных категорий дел не относятся к подведомственности суда?</div>
+              <label class="popap__content-answer">
+                <input class="popap__content-answer-input" type="checkbox" />
+                По заявлениям о защите избирательных прав или права на участие в референдуме граждан Российской Федерации
+              </label>
+              <label class="popap__content-answer">
+                <input class="popap__content-answer-input" type="checkbox" />
+                По заявлениям о защите избирательных прав или права на участие в референдуме граждан Российской Федерации
+              </label>
+              <label class="popap__content-answer">
+                <input class="popap__content-answer-input" type="checkbox" />
+                По заявлениям о защите избирательных прав или права на участие в референдуме граждан Российской Федерации
+              </label>
+              <label class="popap__content-answer">
+                <input class="popap__content-answer-input" type="checkbox" />
+                По заявлениям о защите избирательных прав или права на участие в референдуме граждан Российской Федерации
+              </label>
+              <label class="popap__content-answer">
+                <input class="popap__content-answer-input" type="checkbox" />
+                По заявлениям о защите избирательных прав или права на участие в референдуме граждан Российской Федерации
+              </label>
+              <label class="popap__content-answer">
+                <input class="popap__content-answer-input" type="checkbox" />
+                По заявлениям о защите избирательных прав или права на участие в референдуме граждан Российской Федерации
+              </label>
+            </div>
+            <div class="popap__content-buttons">
+              <button class="popap__content-button popap__content-button--back">Назад</button>
+              <button class="popap__content-button popap__content-button--next">Далее</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </aside>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <picture class="header__logo-picture">
+            <source media="(max-width: 500px)" srcset="assets/images/logo-mobail.png" />
+            <img class="header__logo-img" src="assets/images/logo.png" alt="" />
+          </picture>
+        </a>
+        <nav class="menu">
+          <aside class="menu__burger">
+            <span class="menu__burger-line menu__burger-line--first"></span>
+            <span class="menu__burger-line menu__burger-line--middle"></span>
+            <span class="menu__burger-line menu__burger-line--last"></span>
+          </aside>
+          <div class="menu__desktop">
+            <a class="menu__desktop-element" href="#">О событии</a>
+            <a class="menu__desktop-element" href="#">Юрфирмы</a>
+            <a class="menu__desktop-element" href="#">Организаторы</a>
+            <a class="menu__desktop-element" href="#">Баттл-арена</a>
+          </div>
+        </nav>
+        <a class="header__user">
+          <div class="header__user-name">Екатерина Некрасова</div>
+          <img class="header__user-avatar" src="assets/images/user-avatar.jpg" alt="" />
+        </a>
+        <!-- <button class="min-button">Войти в кабинет</button> -->
+      </div>
+    </header>
+    <main class="firm">
+      <picture class="bg-picture-sub bg-picture-sub--one">
+        <source media="(max-width: 500px)" srcset="assets/images/bg-one-mobail.svg" />
+        <source media="(max-width: 900px)" srcset="assets/images/bg-one-tab.svg" />
+        <img class="bg-picture-sub__img" src="assets/images/bg-one.svg" alt="" loading="lazy" />
+      </picture>
+      <picture class="bg-picture-sub bg-picture-sub--two">
+        <source media="(max-width: 500px)" srcset="assets/images/bg-two-mobail.svg" />
+        <source media="(max-width: 900px)" srcset="assets/images/bg-two-tab.svg" />
+        <img class="bg-picture-sub__img" src="assets/images/bg-two.svg" alt="" loading="lazy" />
+      </picture>
+      <section class="head">
+        <div class="container">
+          <div class="head__inner">
+            <picture class="head__logo-wrapper">
+              <source media="(max-width: 900px)" srcset="assets/images/firm-logo-tab.png" />
+              <img class="head__logo" src="assets/images/firm-logo.png" alt="" />
+            </picture>
+            <button class="share">
+              <div class="share__text">Поделиться</div>
+              <svg class="share__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path fill="#fff" fill-opacity=".01" d="M0 0h24v24h-24z" />
+                <path
+                  d="M10 3v2h-5v14h14v-5h2v6c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-16c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-16c0-.265.105-.52.293-.707.188-.188.442-.293.707-.293h6zm7.707 4.707l-5.707 5.707-1.414-1.414 5.707-5.707-3.293-3.293h8v8l-3.293-3.293z"
+                  fill="#fff"
+                />
+              </svg>
+              <aside class="information-share">
+                <div class="information-share__item">
+                  <svg class="information-share__item-img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.355 6.271c.133-.445 0-.772-.635-.772h-2.1c-.534 0-.78.282-.913.594 0 0-1.068 2.603-2.581 4.294-.489.489-.712.645-.979.645-.133 0-.327-.156-.327-.601v-4.16c0-.534-.155-.772-.6-.772h-3.3c-.334 0-.534.248-.534.483 0 .506.756.623.834 2.047v3.093c0 .678-.122.801-.389.801-.712 0-2.443-2.615-3.471-5.607-.201-.582-.403-.816-.94-.816h-2.1c-.6 0-.72.282-.72.594 0 .556.712 3.315 3.315 6.964 1.736 2.492 4.18 3.842 6.405 3.842 1.335 0 1.5-.3 1.5-.817v-1.883c0-.6.127-.72.549-.72.312 0 .846.156 2.092 1.357 1.424 1.424 1.658 2.063 2.459 2.063h2.1c.6 0 .9-.3.727-.892-.189-.59-.869-1.446-1.771-2.461-.489-.579-1.224-1.201-1.446-1.513-.311-.401-.223-.578 0-.934 0 0 2.558-3.604 2.825-4.828z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  <div class="information-share__item-text">Вконтакте</div>
+                </div>
+                <div class="information-share__item">
+                  <svg class="information-share__item-img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      d="M12.798 20.8v-8.758h2.94l.44-3.413h-3.38v-2.179c0-.988.274-1.662 1.692-1.662l1.807-.001v-3.053c-.313-.041-1.386-.134-2.634-.134-2.606 0-4.39 1.591-4.39 4.512v2.517h-2.947v3.413h2.947v8.758h3.525z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  <div class="information-share__item-text">Фейсбук</div>
+                </div>
+                <div class="information-share__item">
+                  <svg class="information-share__item-img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      d="M12.009 4.213c1.226 0 2.223.997 2.223 2.223 0 1.225-.998 2.222-2.223 2.222-1.225 0-2.223-.997-2.223-2.222 0-1.226.998-2.223 2.223-2.223zm0 7.591c2.961 0 5.37-2.407 5.37-5.367 0-2.962-2.408-5.37-5.37-5.37-2.961 0-5.37 2.409-5.37 5.37 0 2.96 2.408 5.367 5.37 5.367zm2.172 4.38c1.105-.251 2.159-.688 3.118-1.291.353-.222.604-.575.696-.982.093-.407.02-.834-.202-1.187-.11-.175-.253-.327-.422-.446-.169-.12-.359-.205-.56-.251-.201-.046-.41-.052-.614-.017-.204.035-.399.109-.573.219-2.2 1.383-5.031 1.382-7.229 0-.175-.11-.37-.185-.573-.219-.204-.035-.412-.029-.614.017-.201.046-.392.131-.56.251-.168.12-.312.271-.422.446-.222.353-.295.78-.203 1.187.092.407.343.76.696.982.959.603 2.013 1.039 3.117 1.291l-3.002 3.002c-.295.295-.461.695-.461 1.113 0 .417.166.817.461 1.112.295.295.695.461 1.113.461.417 0 .817-.166 1.112-.461l2.949-2.949 2.951 2.95c.146.146.319.262.51.341.191.079.395.12.602.12.206 0 .411-.041.602-.12.191-.079.364-.195.51-.341.146-.146.262-.319.342-.51.079-.191.12-.396.12-.602 0-.207-.041-.411-.12-.602-.079-.191-.195-.364-.342-.51l-3.001-3.003z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  <div class="information-share__item-text">Одноклассники</div>
+                </div>
+                <div class="information-share__item">
+                  <svg class="information-share__item-img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      d="M7 6v-3c0-.265.105-.52.293-.707.188-.188.442-.293.707-.293h12c.265 0 .52.105.707.293.188.188.293.442.293.707v14c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-3v3c0 .552-.45 1-1.007 1h-11.986c-.132.001-.263-.024-.385-.074-.122-.05-.233-.123-.327-.216s-.168-.203-.219-.325c-.051-.122-.077-.252-.077-.384l.003-14c0-.552.45-1 1.007-1h2.99zm-1.997 2l-.003 12h10v-12h-9.997zm3.997-2h8v10h2v-12h-10v2z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  <div class="information-share__item-text">Скопировать ссылку</div>
+                </div>
+              </aside>
+            </button>
+          </div>
+          <div class="title">Юридическая Фирма «Розенберг, Филатов и Партнёры»</div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__contacts">
+            <div class="about__contacts-inner">
+              <a class="about__site" href="#">lawmoscow.ru</a>
+              <div class="about__title">Адрес компании</div>
+              <div class="about__location">Москва, Яковоапостольский переулок, 12с1</div>
+              <div class="socials">
+                <a class="socials__element" href="#">
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.177 6.023c.148-.494 0-.858-.706-.858h-2.334c-.593 0-.867.314-1.015.66 0 0-1.187 2.893-2.868 4.772-.544.544-.791.717-1.088.717-.148 0-.363-.173-.363-.667v-4.624c0-.593-.172-.858-.667-.858h-3.668c-.371 0-.594.275-.594.536 0 .563.841.692.927 2.275v3.437c0 .754-.136.89-.433.89-.791 0-2.716-2.906-3.857-6.231-.224-.646-.448-.907-1.045-.907h-2.334c-.667 0-.8.314-.8.66 0 .618.791 3.684 3.684 7.739 1.929 2.769 4.646 4.27 7.118 4.27 1.484 0 1.667-.334 1.667-.908v-2.093c0-.667.14-.8.61-.8.346 0 .94.173 2.325 1.508 1.582 1.582 1.843 2.292 2.733 2.292h2.334c.667 0 1-.334.808-.991-.21-.656-.966-1.607-1.968-2.735-.544-.643-1.36-1.335-1.607-1.681-.346-.445-.247-.643 0-1.038 0 0 2.843-4.006 3.14-5.366z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+                <a class="socials__element" href="#">
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      d="M12.068 21.666v-9.731h3.266l.489-3.792h-3.755v-2.421c0-1.098.305-1.846 1.88-1.846l2.008-.001v-3.392c-.348-.046-1.539-.149-2.926-.149-2.895 0-4.878 1.767-4.878 5.013v2.797h-3.275v3.792h3.275v9.731h3.916z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+                <a class="socials__element" href="#">
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      d="M11 7.333c-2.025 0-3.666 1.642-3.666 3.667s1.641 3.667 3.666 3.667 3.667-1.642 3.667-3.667-1.642-3.667-3.667-3.667z"
+                      fill="#fff"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.45 1.525c.635-.247 1.363-.416 2.427-.464 1.067-.049 1.408-.061 4.124-.061 2.716 0 3.056.012 4.123.061 1.064.048 1.791.217 2.427.464.657.255 1.215.597 1.771 1.153.556.557.897 1.114 1.153 1.771.247.635.416 1.363.465 2.427.048 1.066.06 1.407.06 4.123s-.011 3.056-.06 4.123c-.048 1.065-.217 1.792-.465 2.427-.256.657-.597 1.216-1.153 1.771-.557.556-1.114.898-1.771 1.154-.636.247-1.363.416-2.427.464-1.066.049-1.407.061-4.123.061s-3.056-.012-4.123-.061c-1.065-.048-1.791-.217-2.427-.464-.658-.256-1.215-.598-1.771-1.154-.556-.555-.898-1.114-1.153-1.771-.247-.636-.416-1.363-.464-2.427-.049-1.066-.061-1.407-.061-4.123s.011-3.057.061-4.123c.048-1.065.217-1.792.464-2.427.255-.658.597-1.216 1.153-1.771.557-.556 1.114-.898 1.771-1.153zm6.55 15.123c-3.12 0-5.648-2.529-5.648-5.648 0-3.12 2.529-5.648 5.648-5.648 3.12 0 5.648 2.529 5.648 5.648 0 3.12-2.529 5.648-5.648 5.648zm4.774-10.787c-.145-.217-.222-.472-.222-.733 0-.35.139-.685.387-.933.248-.247.584-.386.934-.387.261 0 .516.078.733.223.217.145.386.351.486.593.1.241.126.507.075.763-.051.256-.177.491-.362.676-.185.185-.42.31-.676.361-.256.051-.521.025-.763-.075-.241-.1-.447-.269-.592-.486z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+                <a class="socials__element" href="#">
+                  <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.557 18.922c1.118.489 1.538-.536 1.538-.536l2.959-14.865c-.023-1.002-1.375-.396-1.375-.396l-16.565 6.5s-.792.28-.722.769c.07.489.699.722.699.722l4.17 1.398s1.258 4.124 1.514 4.916c.233.769.443.792.443.792.233.093.443-.07.443-.07l2.703-2.446 4.194 3.215zm.722-12.768s.582-.349.559 0c0 0 .093.047-.21.373-.28.28-6.873 6.197-7.758 6.99-.07.047-.116.117-.116.21l-.256 2.19c-.047.233-.349.256-.419.047l-1.095-3.588c-.047-.14 0-.303.14-.396l9.156-5.825z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="filter-switch">
+              <div class="filter-switch__text">Материалы</div>
+              <div class="filter-switch__modal">
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 1
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 2
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 3
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 4
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 5
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 6
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 6
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Юридические кейсы за 2020 год.pdf
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 6
+                </a>
+                <a class="filter-switch__modal-label" href="#" download>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path
+                      opacity=".4"
+                      d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                      fill="#F2F4F5"
+                    />
+                  </svg>
+                  Материалы 6
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about__informationn">
+            <iframe
+              class="about__video"
+              src="https://www.youtube.com/embed/1La4QzGeaaQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="about__text">
+              Мы — ведущая юридическая фирма, юридический холдинг. Бюро объединяет опытных юристов, которые являются признанными специалистами в своей
+              области. Масштаб юридических консультантов позволяет устанавливать гибкие ценовые тарифы. Юридические подразделения холдинга участвуют в
+              системе «pro bono» — оказание профессиональной юридической помощи бесплатно. Квинтэссенция работы наших адвокатов — становление во главу
+              угла желаемый результат. Делая желаемое — реальным, мы сохраняем самое важное — доверие и репутацию.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="webinars">
+        <div class="container">
+          <div class="min-title">Вебинары 18 декабря</div>
+          <div class="webinars__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Множественность солидарных должников из разных оснований</a>
+                  <div class="box-slide__text">
+                    20 октября прошла онлайн-презентация исследования о возможности возникновения солидарных обязательств из разных оснований. Автор
+                    исследования — Александр...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <button class="avatars__more">
+                      + 6
+                      <div class="avatars__more-modal">
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Право на приращение доли в общей собственности</a>
+                  <div class="box-slide__text">
+                    20 октября прошла онлайн-презентация исследования о возможности возникновения солидарных обязательств из разных оснований. Автор
+                    исследования — Александр...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite box-slide__picture-favorite--active"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Онлайн арбитраж в Российском арбитражном центре</a>
+                  <div class="box-slide__text">
+                    Каковы преимущества дистанционного разбирательства? Какой порядок арбитража онлайн по регламенту Российского арбитражного центра?
+                    Какие инструменты...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <button class="avatars__more">
+                      + 6
+                      <div class="avatars__more-modal">
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Множественность солидарных должников из разных оснований</a>
+                  <div class="box-slide__text">
+                    20 октября прошла онлайн-презентация исследования о возможности возникновения солидарных обязательств из разных оснований. Автор
+                    исследования — Александр...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <button class="avatars__more">
+                      + 6
+                      <div class="avatars__more-modal">
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Множественность солидарных должников из разных оснований</a>
+                  <div class="box-slide__text">
+                    20 октября прошла онлайн-презентация исследования о возможности возникновения солидарных обязательств из разных оснований. Автор
+                    исследования — Александр...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <button class="avatars__more">
+                      + 6
+                      <div class="avatars__more-modal">
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-arrow slider-arrow--left">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path d="M7.828 11l5.364-5.364-1.414-1.414-7.778 7.778 7.778 7.778 1.414-1.414-5.364-5.364h12.172v-2h-12.172z" fill="#fff" />
+              </svg>
+            </button>
+            <button class="slider-arrow slider-arrow--right">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414 7.778 7.778-7.778 7.778-1.414-1.414 5.364-5.364h-12.172v-2h12.172z" fill="#fff" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="interview">
+        <div class="container">
+          <div class="min-title">Запишитесь на собеседование 18 декабря</div>
+          <form class="interview__block box" method="POST" id="interview-form">
+            <div class="interview__block-time">9:00</div>
+            <div class="interview__block-time">10:00</div>
+            <div class="interview__block-time">11:00</div>
+            <div class="interview__block-time">12:00</div>
+            <div class="interview__block-time">13:00</div>
+            <div class="interview__block-time">14:00</div>
+            <div class="interview__block-time">15:00</div>
+            <div class="interview__block-time">16:00</div>
+            <div class="interview__block-time">17:00</div>
+            <div class="interview__block-time">18:00</div>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">9:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">10:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label interview__block-label--close">
+              <div class="interview__block-label-text">Занято</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">12:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label interview__block-label--close">
+              <div class="interview__block-label-text">Занято</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label interview__block-label--close">
+              <div class="interview__block-label-text">Занято</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label interview__block-label--close">
+              <div class="interview__block-label-text">Занято</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">16:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">17:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+            <label class="interview__block-label">
+              <div class="interview__block-label-text">18:00</div>
+              <input class="input-hidden" type="radio" name="time" />
+            </label>
+          </form>
+        </div>
+      </section>
+      <!-- <section class="team">
+        <div class="container">
+          <div class="min-title">Контакты</div>
+
+        </div>
+      </section> -->
+    </main>
+    <footer class="footer">
+      <svg class="footer__bg" width="940" height="265" viewBox="0 0 940 265" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M170.307 239.26c24.71-18.377 60.931-33.44 65.361-57.297 10.326-55.601-83.389-126.492-23.471-168.273 47.67-33.24 161.31 2.939 242.861 15.294 76.05 11.522 170.262 16.827 215.452 54.14 47.982 39.618-35.535 91.917 10.247 132.219 57.017 50.193 233.687 47.275 257.045 103.08 20.081 47.976-102.066 70.037-176.37 89.665-58.659 15.495-129.66 12.558-198.516 9.363-49.564-2.3-94.312-20.178-143.87-25.252-49.653-5.083-96.481.248-146.167-4.443-91.082-8.599-233.684 14.213-267.401-34.6-35.535-51.445 111.397-74.159 164.829-113.897z"
+          fill="#122243"
+        />
+      </svg>
+      <div class="footer__container container">
+        <div class="footer__head">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="assets/images/logo-footer.png" alt="" />
+          </a>
+          <nav class="footer__nav">
+            <a class="footer__nav-element" href="#">О событии</a>
+            <a class="footer__nav-element" href="#">Юрфирмы</a>
+            <a class="footer__nav-element" href="#">Выставка</a>
+            <a class="footer__nav-element" href="#">Организаторы</a>
+            <a class="footer__nav-element" href="#">Баттл-арена</a>
+          </nav>
+          <div class="socials">
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.177 6.023c.148-.494 0-.858-.706-.858h-2.334c-.593 0-.867.314-1.015.66 0 0-1.187 2.893-2.868 4.772-.544.544-.791.717-1.088.717-.148 0-.363-.173-.363-.667v-4.624c0-.593-.172-.858-.667-.858h-3.668c-.371 0-.594.275-.594.536 0 .563.841.692.927 2.275v3.437c0 .754-.136.89-.433.89-.791 0-2.716-2.906-3.857-6.231-.224-.646-.448-.907-1.045-.907h-2.334c-.667 0-.8.314-.8.66 0 .618.791 3.684 3.684 7.739 1.929 2.769 4.646 4.27 7.118 4.27 1.484 0 1.667-.334 1.667-.908v-2.093c0-.667.14-.8.61-.8.346 0 .94.173 2.325 1.508 1.582 1.582 1.843 2.292 2.733 2.292h2.334c.667 0 1-.334.808-.991-.21-.656-.966-1.607-1.968-2.735-.544-.643-1.36-1.335-1.607-1.681-.346-.445-.247-.643 0-1.038 0 0 2.843-4.006 3.14-5.366z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M12.068 21.666v-9.731h3.266l.489-3.792h-3.755v-2.421c0-1.098.305-1.846 1.88-1.846l2.008-.001v-3.392c-.348-.046-1.539-.149-2.926-.149-2.895 0-4.878 1.767-4.878 5.013v2.797h-3.275v3.792h3.275v9.731h3.916z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M11 7.333c-2.025 0-3.666 1.642-3.666 3.667s1.641 3.667 3.666 3.667 3.667-1.642 3.667-3.667-1.642-3.667-3.667-3.667z"
+                  fill="#fff"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.45 1.525c.635-.247 1.363-.416 2.427-.464 1.067-.049 1.408-.061 4.124-.061 2.716 0 3.056.012 4.123.061 1.064.048 1.791.217 2.427.464.657.255 1.215.597 1.771 1.153.556.557.897 1.114 1.153 1.771.247.635.416 1.363.465 2.427.048 1.066.06 1.407.06 4.123s-.011 3.056-.06 4.123c-.048 1.065-.217 1.792-.465 2.427-.256.657-.597 1.216-1.153 1.771-.557.556-1.114.898-1.771 1.154-.636.247-1.363.416-2.427.464-1.066.049-1.407.061-4.123.061s-3.056-.012-4.123-.061c-1.065-.048-1.791-.217-2.427-.464-.658-.256-1.215-.598-1.771-1.154-.556-.555-.898-1.114-1.153-1.771-.247-.636-.416-1.363-.464-2.427-.049-1.066-.061-1.407-.061-4.123s.011-3.057.061-4.123c.048-1.065.217-1.792.464-2.427.255-.658.597-1.216 1.153-1.771.557-.556 1.114-.898 1.771-1.153zm6.55 15.123c-3.12 0-5.648-2.529-5.648-5.648 0-3.12 2.529-5.648 5.648-5.648 3.12 0 5.648 2.529 5.648 5.648 0 3.12-2.529 5.648-5.648 5.648zm4.774-10.787c-.145-.217-.222-.472-.222-.733 0-.35.139-.685.387-.933.248-.247.584-.386.934-.387.261 0 .516.078.733.223.217.145.386.351.486.593.1.241.126.507.075.763-.051.256-.177.491-.362.676-.185.185-.42.31-.676.361-.256.051-.521.025-.763-.075-.241-.1-.447-.269-.592-.486z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.557 18.922c1.118.489 1.538-.536 1.538-.536l2.959-14.865c-.023-1.002-1.375-.396-1.375-.396l-16.565 6.5s-.792.28-.722.769c.07.489.699.722.699.722l4.17 1.398s1.258 4.124 1.514 4.916c.233.769.443.792.443.792.233.093.443-.07.443-.07l2.703-2.446 4.194 3.215zm.722-12.768s.582-.349.559 0c0 0 .093.047-.21.373-.28.28-6.873 6.197-7.758 6.99-.07.047-.116.117-.116.21l-.256 2.19c-.047.233-.349.256-.419.047l-1.095-3.588c-.047-.14 0-.303.14-.396l9.156-5.825z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+          </div>
+          <a class="footer__link" href="#">law.hse.ru</a>
+        </div>
+        <div class="footer__down">
+          <div class="footer__down-text">© 2020 ВШЭ Юридический факультет</div>
+          <a class="footer__down-text footer__down-text--margin" href="#">Соглашение</a>
+          <a class="footer__down-text" href="#">Политика конфиденциальности</a>
+          <div class="footer__down-design">Задизайнено с любовью в ❤ MateÇa</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

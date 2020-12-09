@@ -99,3 +99,15 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "RF Dewi";
+    src: url("../fonts/RFDewi-Black.eot");
+    src: local("RF Dewi Black"), local("RFDewi-Black"),
+        url("../fonts/RFDewi-Black.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/RFDewi-Black.woff2") format("woff2"),
+        url("../fonts/RFDewi-Black.woff") format("woff"),
+        url("../fonts/RFDewi-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

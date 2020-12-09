@@ -72,23 +72,7 @@
             }
         }
     }
-    &__socials {
-        flex: 0 100%;
-        margin-top: 25px;
-        display: flex;
-        align-items: center;
-        @media (max-width: 900px) {
-            flex: 0 0 auto;
-            margin-top: 35px;
-        }
-        @media (max-width: 700px) {
-            flex: 0 0 100%;
-            margin-top: 25px;
-        }
-        &-element {
-            margin-right: 20px;
-        }
-    }
+
     &__link {
         flex: 0 100%;
         font-weight: 800;

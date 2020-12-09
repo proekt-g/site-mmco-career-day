@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
         $("body").css({ "padding-right": `${scrollbarWidth}px` })
         $("body").toggleClass("block")
     }
-    function ajaxRequest(ajaxForm, url) {
+    function ajaxRequest(ajaxForm, url, element) {
         try {
             history.replaceState(null, null, "#")
         } catch (z) {
@@ -33,9 +33,29 @@ window.addEventListener("load", function () {
             },
             error: function (response) {
                 // Данные не отправлены
-                alert("Ошибка. Данные не отправлены.")
+                // console.log($.parseJSON(response))
+                ajaxForm === 'interview-form' &&
+                    // $.parseJSON(response) === 'true'
+                    true
+                    // false
+                    ? (
+                        scrollEmulation(),
+                        $('.modal-overlay').toggleClass('modal-overlay--active'),
+                        $('.popap__test').toggleClass('popap--active')
+                    )
+                    : (
+                        $(element).toggleClass('interview__block-label--close'),
+                        $(element).find('.interview__block-label-text').text('Занято')
+                    )
+                // alert("Ошибка. Данные не отправлены.")
             },
         })
+    }
+    function closePopap() {
+        $('.input-hidden').prop('checked', false);
+        scrollEmulation()
+        $(".modal-overlay").removeClass("modal-overlay--active")
+        $(".popap").removeClass("popap--active")
     }
     function arcctg(x, y) {
         if (x > 0 && y > 0) return Math.PI / 2 - Math.atan(x / y)
@@ -72,6 +92,14 @@ window.addEventListener("load", function () {
     })
     // /Форма Нового пароля
 
+
+    // Клик на время собеседования
+    $("#interview-form").on("input", (e) => {
+        e.preventDefault()
+        ajaxRequest("interview-form", "test.php", $(e.target).parents('.interview__block-label')[0])
+    })
+    // /Клик на время собеседования
+
     $('.modal__close').on('click', () => {
         scrollEmulation()
         $('.modal').toggleClass('modal--open')
@@ -100,16 +128,62 @@ window.addEventListener("load", function () {
     })
 
     document.addEventListener('mousemove', (e) => {
-        let { x, y } = e
-        x -= (document.querySelector('.eye').getBoundingClientRect().x + 45)
-        y -= (document.querySelector('.eye').getBoundingClientRect().y + 45)
-        document.querySelector('.eye__wrapper--one .eye').style.transform = `rotate(${57.2958 * arcctg(x, y)}deg)`
-        document.querySelector('.eye__wrapper--two .eye').style.transform = `rotate(${57.2958 * arcctg(x - 200, y + 34)}deg)`
+        if (document.querySelector('.eye')) {
+            let { x, y } = e
+            x -= (document.querySelector('.eye').getBoundingClientRect().x + 45)
+            y -= (document.querySelector('.eye').getBoundingClientRect().y + 45)
+            document.querySelector('.eye__wrapper--one .eye').style.transform = `rotate(${57.2958 * arcctg(x, y)}deg)`
+            document.querySelector('.eye__wrapper--two .eye').style.transform = `rotate(${57.2958 * arcctg(x - 200, y + 34)}deg)`
+        }
+
     })
 
+    $(".share").on('click', function () {
+        $(this).find('.information-share').toggleClass('information-share--active')
+    })
+    $(".filter-switch__text").on("click", function () {
+        $(this).parent().toggleClass("filter-switch--active")
+        $(this).next().slideToggle(400)
+    })
+    $('.avatars__more').on("click", function (e) {
+        $(e.target).hasClass('avatars__more') && $(e.target) && $(e.target).toggleClass('avatars__more--active')
+        const moreElement = (($(e.target).hasClass('avatars__more-element') && $(e.target)) || ($(e.target).parents('.avatars__more-element').length && $($(e.target).parents('.avatars__more-element')[0])) || null);
+        moreElement && (
+            moreElement.toggleClass('avatars__more-element--active'),
+            moreElement.find('.avatars__more-text').slideToggle(400)
+        )
+    })
+    $(".popap__close").on("click", closePopap)
+    $(".modal-overlay").on("click", (e) => {
+        if ($(e.target).hasClass("modal-overlay--active")) closePopap()
+    })
+    $('.popap__content-answer-input').on('input', function () {
+        $(this).parent().toggleClass('popap__content-answer--active')
+    })
+    $('.popap__content-stage--start .button').on('click', (e) => {
+        e.preventDefault()
+        $('.popap__content-stage--hidden').toggleClass('popap__content-stage--hidden')
+        $('.popap__content-stage--start').toggleClass('popap__content-stage--hidden')
+        $('.popap__content-step[data-number-question="1"]').toggleClass('popap__content-step--hidden')
+        timer(20)
+    })
     // /event
     // ----------------------------------------------
     // unique function
+    function timer(time) {
+        const date = new Date()
+        const timerInterval = setInterval(() => {
+            const seconds = (new Date().getMinutes() * 60 + new Date().getSeconds()) - (date.getMinutes() * 60 + date.getSeconds());
+            const remainder = (time - seconds) % 60;
+            seconds === time + 1
+                ? clearInterval(timerInterval)
+                : (
+                    $('.popap__content-timer').text(`${Math.trunc((time - seconds) / 60)}:${remainder < 10 ? '0' + remainder : remainder}`),
+                    $('.popap__content-indicator').css('width', (parseFloat($('.popap__content-indicator').css('width')) + (650 / time)) + 'px')
+                )
+
+        }, 1000)
+    }
     function modalActive() {
         !$('.modal').hasClass('modal--open') && scrollEmulation()
         $('.modal').addClass('modal--open')
@@ -194,7 +268,19 @@ window.addEventListener("load", function () {
             break;
     }
 
+    $(window).width() >= 900 && OverlayScrollbars(document.querySelectorAll(".filter-switch__modal"), {
+        paddingAbsolute: true
+    });
 
 
+    new Swiper('.swiper-container', {
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        grabCursor: true,
+        navigation: {
+            nextEl: '.slider-arrow--right',
+            prevEl: '.slider-arrow--left',
+        },
+    });
     // /Page load
 });
