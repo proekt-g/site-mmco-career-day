@@ -54,7 +54,11 @@ gulp.task("js-optimization", function () {
 })
 gulp.task("js", function () {
     return gulp
-        .src(["src/assets/js/_libs.js", "src/assets/js/_main.js", "node_modules/swiper/swiper-bundle.min.js"])
+        .src([
+            "src/assets/js/_libs.js", "src/assets/js/_main.js",
+            "node_modules/swiper/swiper-bundle.min.js",
+            'node_modules/js-sha1/build/sha1.min.js'
+        ])
         .pipe(concat("main.min.js"))
         .pipe(gulp.dest("src/assets/js"))
         .pipe(browserSync.reload({ stream: true }))

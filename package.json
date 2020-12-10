@@ -27,6 +27,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "js-sha1": "^0.6.0",
     "overlayscrollbars": "^1.13.0",
     "swiper": "^6.4.0"
   }
