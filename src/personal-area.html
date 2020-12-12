@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <aside class="modal-overlay">
+      <div class="popap__edit popap">
+        <button class="popap__close">
+          <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path
+              d="M18 15.879l7.425-7.425 2.121 2.121-7.425 7.425 7.425 7.425-2.121 2.121-7.425-7.425-7.425 7.425-2.121-2.121 7.425-7.425-7.425-7.425 2.121-2.121 7.425 7.425z"
+              fill="#fff"
+              opacity=".8"
+            />
+          </svg>
+        </button>
+        <form class="popap__content" method="POST" id="personal-area-edit">
+          <div class="popap__edit-title">Редактирование профиля</div>
+          <div class="popap__edit-avatar">
+            <img class="popap__edit-avatar-picture" src="assets/images/edit-avatar.jpg" alt="" />
+            <!-- нет фото -->
+            <!-- <div class="popap__edit-avatar-picture">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M9.828 5l-2 2h-3.828v12h16v-12h-3.828l-2-2h-4.344zm-.828-2h6l2 2h4c.265 0 .52.105.707.293.188.188.293.442.293.707v14c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-14c0-.265.105-.52.293-.707.188-.188.442-.293.707-.293h4l2-2zm3 15c-1.459 0-2.858-.579-3.889-1.611-1.031-1.031-1.611-2.43-1.611-3.889 0-1.459.579-2.858 1.611-3.889 1.031-1.031 2.43-1.611 3.889-1.611 1.459 0 2.858.579 3.889 1.611 1.031 1.031 1.611 2.43 1.611 3.889 0 1.459-.579 2.858-1.611 3.889-1.031 1.031-2.43 1.611-3.889 1.611zm0-2c.928 0 1.819-.369 2.475-1.025.656-.656 1.025-1.547 1.025-2.475 0-.928-.369-1.819-1.025-2.475-.656-.656-1.547-1.025-2.475-1.025-.928 0-1.819.369-2.475 1.025-.656.656-1.025 1.547-1.025 2.475 0 .928.369 1.819 1.025 2.475.656.656 1.547 1.025 2.475 1.025z"
+                  fill="#08142E"
+                />
+              </svg>
+            </div> -->
+            <div class="popap__edit-avatar-ui">
+              <div class="popap__edit-avatar-title">Фото профиля</div>
+              <div class="popap__edit-avatar-buttons">
+                <label class="popap__edit-avatar-button">
+                  Заменить
+                  <input class="input-hidden" type="file" />
+                </label>
+                <button class="popap__edit-avatar-button popap__edit-avatar-button--delete" type="file">Удалить</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal__text">Фамилия</div>
+          <input class="text-input" type="text" placeholder="Некрасова" required="" />
+          <div class="modal__text">Имя</div>
+          <input class="text-input" type="text" placeholder="Екатерина " required="" />
+          <div class="modal__text">Отчество</div>
+          <input class="text-input" type="text" placeholder="Александровна" required="" />
+          <div class="modal__text">Почта</div>
+          <input class="text-input" type="email" placeholder="nekrasovakate@mail.ru" required="" />
+          <button class="modal__button">Сохранить изменения</button>
+        </form>
+      </div>
+      <div class="popap__video popap">
+        <button class="popap__close">
+          <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path
+              d="M18 15.879l7.425-7.425 2.121 2.121-7.425 7.425 7.425 7.425-2.121 2.121-7.425-7.425-7.425 7.425-2.121-2.121 7.425-7.425-7.425-7.425 2.121-2.121 7.425 7.425z"
+              fill="#fff"
+              opacity=".8"
+            />
+          </svg>
+        </button>
+        <div class="popap__content" method="POST" id="personal-area-edit">
+          <iframe
+            class="popap__video-iframe"
+            src="https://www.youtube.com/embed/1La4QzGeaaQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="popap__video-title">Самопрезентация | Екатерина Некрасова</div>
+        </div>
+      </div>
+      <div class="popap__edit-cv popap">
+        <button class="popap__close">
+          <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path
+              d="M18 15.879l7.425-7.425 2.121 2.121-7.425 7.425 7.425 7.425-2.121 2.121-7.425-7.425-7.425 7.425-2.121-2.121 7.425-7.425-7.425-7.425 2.121-2.121 7.425 7.425z"
+              fill="#fff"
+              opacity=".8"
+            />
+          </svg>
+        </button>
+        <form class="popap__content" method="POST" id="personal-area-edit-cv">
+          <div class="popap__edit-cv-title">Прикрипите ссылку или загрузите файл резюме</div>
+          <div class="modal__text">Ссылка на резюме</div>
+          <input class="text-input" type="text" placeholder="https://hh.ru/your_cv" />
+          <div class="modal__text">Файл резюме</div>
+          <label class="popap__edit-cv-textarea text-input">
+            <input class="input-hidden" type="file" />
+            <div class="popap__edit-cv-file">Перетащите файл сюда</div>
+            <div class="popap__edit-cv-file popap__edit-cv-file--center">или</div>
+            <div class="popap__edit-cv-button min-button">Выберите с компьютера</div>
+
+            <!-- Загрузка -->
+            <!-- <div class="popap__edit-cv-file">Идёт загрузка файла</div>
+            <div class="popap__edit-cv-file-name">Резюме Некрасова Екатерина.pdf</div>
+            <div class="popap__edit-cv-load">
+              <div class="popap__edit-cv-progress">
+                <div class="popap__edit-cv-progress-line"></div>
+              </div>
+              <div class="popap__edit-cv-procent">35%</div>
+            </div> -->
+
+            <!-- Готово -->
+            <!-- <div class="popap__edit-cv-completed">
+              <div class="popap__edit-cv-completed-file">
+                <svg class="popap__edit-cv-completed-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M14 5.333v8.662c.001.088-.016.174-.049.256-.033.081-.082.155-.143.217-.061.062-.135.112-.215.146-.081.034-.167.052-.255.053h-10.676c-.175 0-.344-.07-.468-.194-.124-.124-.194-.292-.194-.468v-12.011c0-.358.299-.661.668-.661h7.33l4.002 4zm-1.333.667h-3.333v-3.333h-6v10.667h9.333v-7.333zm-7.333-1.333h2v1.333h-2v-1.333zm0 2.667h5.333v1.333h-5.333v-1.333zm0 2.667h5.333v1.333h-5.333v-1.333z"
+                    fill="#3636B2"
+                  />
+                </svg>
+              </div>
+              <div class="popap__edit-cv-file-name">Резюме Некрасова Екатерина.pdf</div>
+            </div> -->
+          </label>
+          <button class="modal__button">Сохранить изменения</button>
+        </form>
+      </div>
+      <div class="popap__edit-video popap">
+        <button class="popap__close">
+          <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path
+              d="M18 15.879l7.425-7.425 2.121 2.121-7.425 7.425 7.425 7.425-2.121 2.121-7.425-7.425-7.425 7.425-2.121-2.121 7.425-7.425-7.425-7.425 2.121-2.121 7.425 7.425z"
+              fill="#fff"
+              opacity=".8"
+            />
+          </svg>
+        </button>
+        <form class="popap__content" method="POST" id="personal-area-edit-video">
+          <div class="popap__edit-video-title">Самопрезентация</div>
+
+          <div class="modal__text">Ссылка на видео YouTube</div>
+          <input class="text-input" type="text" placeholder="youtu.be/65f48s" required="" />
+          <button class="modal__button">Сохранить изменения</button>
+        </form>
+      </div>
+    </aside>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <picture class="header__logo-picture">
+            <source media="(max-width: 500px)" srcset="assets/images/logo-mobail.png" />
+            <img class="header__logo-img" src="assets/images/logo.png" alt="" />
+          </picture>
+        </a>
+        <nav class="menu">
+          <aside class="menu__burger">
+            <span class="menu__burger-line menu__burger-line--first"></span>
+            <span class="menu__burger-line menu__burger-line--middle"></span>
+            <span class="menu__burger-line menu__burger-line--last"></span>
+          </aside>
+          <div class="menu__desktop">
+            <a class="menu__desktop-element" href="#">О событии</a>
+            <a class="menu__desktop-element" href="#">Юрфирмы</a>
+            <a class="menu__desktop-element" href="#">Организаторы</a>
+            <a class="menu__desktop-element" href="#">Баттл-арена</a>
+          </div>
+        </nav>
+        <a class="header__user">
+          <div class="header__user-name">Екатерина Некрасова</div>
+          <img class="header__user-avatar" src="assets/images/user-avatar.jpg" alt="" />
+        </a>
+        <!-- <button class="min-button">Войти в кабинет</button> -->
+      </div>
+    </header>
+    <main class="personal-area">
+      <svg class="bg-picture-sub bg-picture-sub--one" width="50" height="270" viewBox="0 0 50 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle r="11.5" transform="matrix(1 0 0 -1 4.5 11.5)" fill="#9536F4" />
+        <circle r="8.5" transform="matrix(1 0 0 -1 41.5 261.5)" fill="#00FFC2" />
+      </svg>
+      <picture class="bg-picture-sub bg-picture-sub--two">
+        <source media="(max-width: 900px)" srcset="assets/images/bg-two-tab-personal.svg" />
+        <img class="bg-picture-sub__img" src="assets/images/bg-two-personal.svg" alt="" loading="lazy" />
+      </picture>
+      <section class="about">
+        <div class="about__container container">
+          <svg class="about__bg" width="403" height="375" viewBox="0 0 403 375" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M207.323 9.765c37.82-.839 80.351-21.95 110.708.631 30.361 22.583 18.902 70.566 32.492 105.886 14.785 38.427 63.083 70.302 50.367 109.462-12.716 39.16-72.455 33.82-105.054 58.956-34.214 26.382-45.315 90.279-88.513 90.299-43.193.02-60.178-57.658-88.573-90.218-20.982-24.06-38.708-47.998-55.592-75.094-23.455-37.642-70.475-70.357-62.191-113.933 8.153-42.888 58.872-63.739 99.157-80.526 33.857-14.108 70.531-4.651 107.199-5.464z"
+              fill="#122243"
+            />
+          </svg>
+          <picture class="about__avatar">
+            <source media="(max-width: 500px)" srcset="assets/images/person-avatar-mobail.jpg" />
+            <img class="about__avatar-img" src="assets/images/person-avatar.jpg" alt="" />
+            <!-- нет фото -->
+            <!-- <svg class="about__avatar-img" width="277" height="277" viewBox="0 0 277 277" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path
+                d="M68.891 455.832c-46.937-13.926 39.37-263.045 39.37-263.045s-122.103 202.753-198.689 104.484c-97.155-124.663 181.356-150.611 181.356-150.611s-165.005 4.49-169.102-39.421c-3.678-39.428 167.217 16.721 167.217 16.721s-119.897-129.218-28.929-178.037c118.127-63.394 101.533 127.05 101.533 127.05s101.323-158.134 187.457-75.601c82.069 78.638-144.748 122.229-144.748 122.229s145.557-18.671 149.968 13.428c5.036 36.643-136.533 2.79-136.533 2.79s161.724 99.684 102.809 173.349c-84.173 105.248-181.121-108.249-181.121-108.249s1.104 276.183-70.589 254.913z"
+                fill="#3636B2"
+              />
+            </svg>
+            <div class="about__avatar-initials">ЕН</div> -->
+          </picture>
+          <div class="about__information">
+            <div class="title">Екатерина Некрасова</div>
+            <button class="about__edit">
+              Редактировать
+              <svg class="about__edit-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M6.414 16l10.142-10.142-1.414-1.414-10.142 10.142v1.414h1.414zm.829 2h-4.243v-4.243l11.435-11.435c.188-.187.442-.293.707-.293.265 0 .52.105.707.293l2.829 2.829c.188.188.293.442.293.707 0 .265-.105.519-.293.707l-11.435 11.435zm-4.243 2h18v2h-18v-2z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+            <div class="about__work about__work--margin">
+              <div class="about__work-box">
+                <div class="about__work-box-title">Резюме</div>
+                <!-- нету резюме -->
+                <!-- <button class="about__work-box-controls-edit about__work-box-controls-edit--cv min-button">Добавить</button> -->
+                <picture class="about__work-box-picture">
+                  <svg class="about__work-box-img" width="320" height="180" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M0 4C0 1.79086 1.79086 0 4 0H316C318.209 0 320 1.79086 320 4V176C320 178.209 318.209 180 316 180H4C1.79086 180 0 178.209 0 176V4Z"
+                        fill="#122243"
+                      />
+                      <circle cx="30" cy="168" r="55" fill="#163F96" />
+                      <path
+                        d="M57 161C100.329 80.1954 132.655 214.259 182 131"
+                        stroke="#FFD940"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M196.023 106.456C196.253 105.408 197.747 105.408 197.977 106.456L204.871 137.906C205.028 138.623 205.877 138.932 206.458 138.484L231.955 118.823C232.804 118.168 233.949 119.129 233.451 120.079L218.517 148.602C218.176 149.252 218.628 150.035 219.361 150.065L251.53 151.393C252.602 151.437 252.862 152.909 251.87 153.317L222.095 165.567C221.416 165.846 221.259 166.737 221.801 167.231L245.591 188.926C246.383 189.649 245.636 190.943 244.614 190.618L213.931 180.863C213.232 180.641 212.539 181.222 212.637 181.949L216.915 213.86C217.058 214.923 215.653 215.434 215.079 214.528L197.845 187.333C197.452 186.713 196.548 186.713 196.155 187.333L178.921 214.528C178.347 215.434 176.942 214.923 177.085 213.86L181.363 181.949C181.461 181.222 180.768 180.641 180.069 180.863L149.386 190.618C148.364 190.943 147.617 189.649 148.409 188.926L172.199 167.231C172.741 166.737 172.584 165.846 171.905 165.567L142.13 153.317C141.138 152.909 141.398 151.437 142.47 151.393L174.639 150.065C175.372 150.035 175.824 149.252 175.483 148.602L160.549 120.079C160.051 119.129 161.196 118.168 162.045 118.823L187.542 138.484C188.123 138.932 188.972 138.623 189.129 137.906L196.023 106.456Z"
+                        fill="#3636B2"
+                      />
+                      <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="151" y="108" width="56" height="41">
+                        <rect x="151" y="108" width="56" height="41" fill="#C4C4C4" />
+                      </mask>
+                      <g mask="url(#mask0)">
+                        <path
+                          d="M57 161C100.329 80.1949 132.655 214.258 182 131"
+                          stroke="#FFD940"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <rect x="218" y="100.058" width="120" height="168" rx="3" transform="rotate(-15 218 100.058)" fill="#5072A5" />
+                      <circle opacity="0.5" cx="252.034" cy="118.891" r="15" transform="rotate(-15 252.034 118.891)" fill="white" />
+                      <rect x="277.716" y="102.692" width="48" height="5" transform="rotate(-15 277.716 102.692)" fill="#142038" />
+                      <rect x="281.101" y="115.321" width="48" height="5" transform="rotate(-15 281.101 115.321)" fill="#142038" />
+                      <rect x="246.724" y="149.302" width="90" height="5" transform="rotate(-15 246.724 149.302)" fill="#142038" />
+                      <rect x="250.606" y="163.791" width="90" height="5" transform="rotate(-15 250.606 163.791)" fill="#142038" />
+                      <rect x="254.488" y="178.279" width="90" height="5" transform="rotate(-15 254.488 178.279)" fill="#142038" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <path
+                          d="M0 4C0 1.79086 1.79086 0 4 0H316C318.209 0 320 1.79086 320 4V176C320 178.209 318.209 180 316 180H4C1.79086 180 0 178.209 0 176V4Z"
+                          fill="white"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="about__work-box-name">Резюме — Екатерина Некрасова</div>
+                  <a class="about__work-box-ui" href="#" download>
+                    Скачать
+                    <svg class="about__work-box-ui-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                      <path
+                        d="M3.334 15.833h13.333v-5.833h1.667v6.667c0 .221-.088.433-.244.589-.156.156-.368.244-.589.244h-15c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-6.667h1.667v5.833zm8.333-8.333h4.167l-5.833 5.833-5.833-5.833h4.167v-5h3.333v5z"
+                        fill="#fff"
+                      />
+                    </svg>
+                    <!-- смотреть -->
+                    <!-- <svg class="about__work-box-ui-icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                      <path d="M9.331 8.845l-7.173 7.172-1.178-1.178 7.172-7.173h-6.321v-1.667h9.167v9.167h-1.667v-6.322z" fill="#fff" />
+                    </svg> -->
+                  </a>
+                  <div class="about__work-box-controls">
+                    <button class="about__work-box-controls-edit about__work-box-controls-edit--cv">
+                      <svg
+                        class="about__work-box-controls-edit-icon"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.107 11.059l-1.178-1.178-7.762 7.762v1.178h1.178l7.762-7.762zm1.178-1.178l1.178-1.178-1.178-1.178-1.178 1.178 1.178 1.178zm-8.25 10.607h-3.535v-3.536l11.196-11.196c.156-.156.368-.244.589-.244.221 0 .433.088.589.244l2.358 2.357c.156.156.244.368.244.589 0 .221-.088.433-.244.589l-11.196 11.196h-.001z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </button>
+                    <form method="POST" id="delete-cv">
+                      <button class="about__work-box-controls-delete">
+                        <svg
+                          class="about__work-box-controls-edit-icon"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                        >
+                          <path
+                            d="M12 11.574l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95 1.414-1.414 4.95 4.95z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </picture>
+              </div>
+              <div class="about__work-box">
+                <div class="about__work-box-title">Самопрезентация</div>
+                <!-- нету видео -->
+                <!-- <button class="about__work-box-controls-edit about__work-box-controls-edit--video min-button">Добавить</button> -->
+                <picture class="about__work-box-picture">
+                  <img class="about__work-box-img" src="assets/images/personal-video.jpg" alt="" />
+                  <button class="play">
+                    <svg class="play__icon" width="22" height="26" viewBox="0 0 22 26" xmlns="http://www.w3.org/2000/svg" fill="none">
+                      <path
+                        d="M21.5 12.134c.667.385.667 1.347 0 1.732l-19.5 11.258c-.667.385-1.5-.096-1.5-.866v-22.517c0-.77.833-1.251 1.5-.866l19.5 11.258z"
+                        fill="#12181F"
+                      />
+                    </svg>
+                  </button>
+                  <div class="about__work-box-controls">
+                    <button class="about__work-box-controls-edit about__work-box-controls-edit--video">
+                      <svg
+                        class="about__work-box-controls-edit-icon"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.107 11.059l-1.178-1.178-7.762 7.762v1.178h1.178l7.762-7.762zm1.178-1.178l1.178-1.178-1.178-1.178-1.178 1.178 1.178 1.178zm-8.25 10.607h-3.535v-3.536l11.196-11.196c.156-.156.368-.244.589-.244.221 0 .433.088.589.244l2.358 2.357c.156.156.244.368.244.589 0 .221-.088.433-.244.589l-11.196 11.196h-.001z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </button>
+                    <form method="POST" id="delete-video">
+                      <button class="about__work-box-controls-delete">
+                        <svg
+                          class="about__work-box-controls-edit-icon"
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                        >
+                          <path
+                            d="M12 11.574l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95 1.414-1.414 4.95 4.95z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="meeting">
+        <div class="container">
+          <div class="min-title">Встречи 18 декабря</div>
+          <div class="meeting__body">
+            <div class="interview-box interview-box--whait box">
+              <div class="interview-box__head">
+                <div class="interview-box__time">10:00 — 10:20</div>
+                <div class="interview-box__head-title">ждёт подтверждения</div>
+              </div>
+              <div class="interview-box__text">Комания:<span class="interview-box__text-bold">Юридическая Москва</span></div>
+              <div class="interview-box__text">Hr менеджер:<span class="interview-box__text-bold">Царенков Никита</span></div>
+            </div>
+            <div class="interview-box interview-box--success box">
+              <div class="interview-box__head">
+                <div class="interview-box__time">10:00 — 10:20</div>
+                <div class="interview-box__head-title">подтверждена</div>
+              </div>
+              <div class="interview-box__text">Комания:<span class="interview-box__text-bold">Юридическая Москва</span></div>
+              <div class="interview-box__text">Hr менеджер:<span class="interview-box__text-bold">Царенков Никита</span></div>
+              <a class="min-button" href="#">Подключиться в ZOOM</a>
+            </div>
+            <div class="interview-box interview-box--fail box">
+              <div class="interview-box__head">
+                <div class="interview-box__time">10:00 — 10:20</div>
+                <div class="interview-box__head-title">не получилось</div>
+              </div>
+              <div class="interview-box__text">Комания:<span class="interview-box__text-bold">Юридическая Москва</span></div>
+              <div class="interview-box__text">Hr менеджер:<span class="interview-box__text-bold">Царенков Никита</span></div>
+            </div>
+            <div class="interview-box interview-box--fail box">
+              <div class="interview-box__head">
+                <div class="interview-box__time">10:00 — 10:20</div>
+                <div class="interview-box__head-title">не получилось</div>
+              </div>
+              <div class="interview-box__text">Комания:<span class="interview-box__text-bold">Юридическая Москва</span></div>
+              <div class="interview-box__text">Hr менеджер:<span class="interview-box__text-bold">Царенков Никита</span></div>
+            </div>
+            <div class="interview-box interview-box--success box">
+              <div class="interview-box__head">
+                <div class="interview-box__time">10:00 — 10:20</div>
+                <div class="interview-box__head-title">подтверждена</div>
+              </div>
+              <div class="interview-box__text">Комания:<span class="interview-box__text-bold">Юридическая Москва</span></div>
+              <div class="interview-box__text">Hr менеджер:<span class="interview-box__text-bold">Царенков Никита</span></div>
+              <a class="min-button" href="#">Подключиться в ZOOM</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="webinars">
+        <div class="container">
+          <div class="min-title">Избранные вебинары 18 декабря</div>
+          <div class="webinars__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Множественность солидарных должников из разных оснований</a>
+                  <div class="box-slide__text">
+                    20 октября прошла онлайн-презентация исследования о возможности возникновения солидарных обязательств из разных оснований. Автор
+                    исследования — Александр...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <button class="avatars__more">
+                      + 6
+                      <div class="avatars__more-modal">
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                        <div class="avatars__more-element">
+                          <img class="avatars__more-img" src="assets/images/avatar-more.jpg" />
+                          <div class="avatars__more-name">Ульяна Комарова</div>
+                          <svg class="avatars__more-arrow" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="#787C80" stroke-width="2" />
+                          </svg>
+                          <div class="avatars__more-text">
+                            Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="box-slide swiper-slide box">
+                  <div class="box-slide__picture">
+                    <img class="box-slide__picture-img" src="assets/images/webinars-picture.jpg" alt="" />
+                    <button class="box-slide__picture-favorite"></button>
+                  </div>
+                  <div class="box-slide__time">9:00 — 11:00</div>
+                  <a class="box-slide__title" href="#">Право на приращение доли в общей собственности</a>
+                  <div class="box-slide__text">
+                    20 октября прошла онлайн-презентация исследования о возможности возникновения солидарных обязательств из разных оснований. Автор
+                    исследования — Александр...
+                  </div>
+                  <div class="avatars">
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                    <div class="avatars__avatar">
+                      <img class="avatars__avatar-img" src="assets/images/avatar.jpg" alt="" loading="lazy" />
+                      <div class="avatars__avatar-modal">
+                        <div class="avatars__avatar-modal-head">
+                          <img class="avatars__avatar-modal-avatar" src="assets/images/card-avatar.jpg" alt="" loading="lazy" />
+                          <div class="avatars__avatar-modal-name">Александр Просенко</div>
+                        </div>
+                        <div class="avatars__avatar-modal-text">
+                          Эксперт по глобальному здравоохранению и биобезопасности, специалист по укреплению систем здравоохранения
+                        </div>
+                        <a class="avatars__avatar-modal-link" href="#">
+                          <svg
+                            class="avatars__avatar-modal-link-icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                          >
+                            <path fill="#fff" fill-opacity=".01" style="mix-blend-mode: multiply" d="M0 0h20v20h-20z" />
+                            <path
+                              d="M6.667 15h8.531l1.469 1.154v-8.654h.833c.221 0 .433.088.589.244.156.156.244.368.244.589v11.25l-3.713-2.917h-7.121c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589v-.833zm-2.121-1.667l-3.713 2.917v-12.917c0-.221.088-.433.244-.589.156-.156.368-.244.589-.244h12.5c.221 0 .433.088.589.244.156.156.244.368.244.589v10h-10.454z"
+                              fill="#0454BE"
+                            />
+                          </svg>
+                          Написать спикеру
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-arrow slider-arrow--left">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path d="M7.828 11l5.364-5.364-1.414-1.414-7.778 7.778 7.778 7.778 1.414-1.414-5.364-5.364h12.172v-2h-12.172z" fill="#fff" />
+              </svg>
+            </button>
+            <button class="slider-arrow slider-arrow--right">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414 7.778 7.778-7.778 7.778-1.414-1.414 5.364-5.364h-12.172v-2h12.172z" fill="#fff" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="meeting">
+        <div class="container">
+          <div class="min-title">Встречи 18 декабря</div>
+          <div class="interview-box interview-box--block box">
+            <div class="interview-box__text">
+              Запишитесь на собеседование в любую понравившуюся компанию. Вы можете пройти по одному собеседованию в каждой юрфирме. После записи ваши
+              встречи появятся тут.
+            </div>
+            <a class="min-button" href="#">Смотреть компании</a>
+          </div>
+        </div>
+      </section>
+      <section class="certificate">
+        <div class="container">
+          <div class="certificate__head">
+            <div class="min-title">Сертификат участника</div>
+            <div class="certificate__head-ui">
+              <a class="certificate__head-button" download href="#">
+                <div class="certificate__head-button-text">Скачать</div>
+                <svg class="certificate__head-ui-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    d="M4 19h16v-7h2v8c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-18c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-8h2v7zm10-10h5l-7 7-7-7h5v-6h4v6z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+              <button class="share">
+                <div class="share__text">Поделиться</div>
+                <svg class="share__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path fill="#fff" fill-opacity=".01" d="M0 0h24v24h-24z" />
+                  <path
+                    d="M10 3v2h-5v14h14v-5h2v6c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-16c-.265 0-.52-.105-.707-.293-.188-.188-.293-.442-.293-.707v-16c0-.265.105-.52.293-.707.188-.188.442-.293.707-.293h6zm7.707 4.707l-5.707 5.707-1.414-1.414 5.707-5.707-3.293-3.293h8v8l-3.293-3.293z"
+                    fill="#fff"
+                  />
+                </svg>
+                <aside class="information-share">
+                  <div class="information-share__item">
+                    <svg
+                      class="information-share__item-img"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.355 6.271c.133-.445 0-.772-.635-.772h-2.1c-.534 0-.78.282-.913.594 0 0-1.068 2.603-2.581 4.294-.489.489-.712.645-.979.645-.133 0-.327-.156-.327-.601v-4.16c0-.534-.155-.772-.6-.772h-3.3c-.334 0-.534.248-.534.483 0 .506.756.623.834 2.047v3.093c0 .678-.122.801-.389.801-.712 0-2.443-2.615-3.471-5.607-.201-.582-.403-.816-.94-.816h-2.1c-.6 0-.72.282-.72.594 0 .556.712 3.315 3.315 6.964 1.736 2.492 4.18 3.842 6.405 3.842 1.335 0 1.5-.3 1.5-.817v-1.883c0-.6.127-.72.549-.72.312 0 .846.156 2.092 1.357 1.424 1.424 1.658 2.063 2.459 2.063h2.1c.6 0 .9-.3.727-.892-.189-.59-.869-1.446-1.771-2.461-.489-.579-1.224-1.201-1.446-1.513-.311-.401-.223-.578 0-.934 0 0 2.558-3.604 2.825-4.828z"
+                        fill="#F2F4F5"
+                      />
+                    </svg>
+                    <div class="information-share__item-text">Вконтакте</div>
+                  </div>
+                  <div class="information-share__item">
+                    <svg
+                      class="information-share__item-img"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.798 20.8v-8.758h2.94l.44-3.413h-3.38v-2.179c0-.988.274-1.662 1.692-1.662l1.807-.001v-3.053c-.313-.041-1.386-.134-2.634-.134-2.606 0-4.39 1.591-4.39 4.512v2.517h-2.947v3.413h2.947v8.758h3.525z"
+                        fill="#F2F4F5"
+                      />
+                    </svg>
+                    <div class="information-share__item-text">Фейсбук</div>
+                  </div>
+                  <div class="information-share__item">
+                    <svg
+                      class="information-share__item-img"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.009 4.213c1.226 0 2.223.997 2.223 2.223 0 1.225-.998 2.222-2.223 2.222-1.225 0-2.223-.997-2.223-2.222 0-1.226.998-2.223 2.223-2.223zm0 7.591c2.961 0 5.37-2.407 5.37-5.367 0-2.962-2.408-5.37-5.37-5.37-2.961 0-5.37 2.409-5.37 5.37 0 2.96 2.408 5.367 5.37 5.367zm2.172 4.38c1.105-.251 2.159-.688 3.118-1.291.353-.222.604-.575.696-.982.093-.407.02-.834-.202-1.187-.11-.175-.253-.327-.422-.446-.169-.12-.359-.205-.56-.251-.201-.046-.41-.052-.614-.017-.204.035-.399.109-.573.219-2.2 1.383-5.031 1.382-7.229 0-.175-.11-.37-.185-.573-.219-.204-.035-.412-.029-.614.017-.201.046-.392.131-.56.251-.168.12-.312.271-.422.446-.222.353-.295.78-.203 1.187.092.407.343.76.696.982.959.603 2.013 1.039 3.117 1.291l-3.002 3.002c-.295.295-.461.695-.461 1.113 0 .417.166.817.461 1.112.295.295.695.461 1.113.461.417 0 .817-.166 1.112-.461l2.949-2.949 2.951 2.95c.146.146.319.262.51.341.191.079.395.12.602.12.206 0 .411-.041.602-.12.191-.079.364-.195.51-.341.146-.146.262-.319.342-.51.079-.191.12-.396.12-.602 0-.207-.041-.411-.12-.602-.079-.191-.195-.364-.342-.51l-3.001-3.003z"
+                        fill="#F2F4F5"
+                      />
+                    </svg>
+                    <div class="information-share__item-text">Одноклассники</div>
+                  </div>
+                  <div class="information-share__item">
+                    <svg
+                      class="information-share__item-img"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                    >
+                      <path
+                        d="M7 6v-3c0-.265.105-.52.293-.707.188-.188.442-.293.707-.293h12c.265 0 .52.105.707.293.188.188.293.442.293.707v14c0 .265-.105.52-.293.707-.188.188-.442.293-.707.293h-3v3c0 .552-.45 1-1.007 1h-11.986c-.132.001-.263-.024-.385-.074-.122-.05-.233-.123-.327-.216s-.168-.203-.219-.325c-.051-.122-.077-.252-.077-.384l.003-14c0-.552.45-1 1.007-1h2.99zm-1.997 2l-.003 12h10v-12h-9.997zm3.997-2h8v10h2v-12h-10v2z"
+                        fill="#F2F4F5"
+                      />
+                    </svg>
+                    <div class="information-share__item-text">Скопировать ссылку</div>
+                  </div>
+                </aside>
+              </button>
+            </div>
+          </div>
+          <div class="certificate-card">
+            <svg class="certificate-card__main-logo" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M49.7603 0.000586894C22.1509 0.132977 -0.131803 22.6303 0.000586894 50.2397C0.132977 77.8491 22.6303 100.132 50.2397 99.9994C77.8491 99.867 100.132 77.3687 99.9994 49.7603C99.867 22.1509 77.3697 -0.131803 49.7603 0.000586894ZM49.7643 0.82699C22.6112 0.956371 0.696606 23.0826 0.82699 50.2347L0.827993 50.2357C0.957374 77.3877 23.0836 99.3023 50.2357 99.1719C77.3877 99.0415 99.3023 76.9173 99.1719 49.7643C99.0426 22.6112 76.9163 0.696606 49.7643 0.82699Z"
+                fill="white"
+              />
+              <path
+                d="M64.7766 9.99405C64.6091 10.5758 64.0013 10.9098 63.4216 10.7403C62.8409 10.5728 62.5069 9.96496 62.6744 9.38526C62.8419 8.80454 63.4496 8.47056 64.0304 8.63805C64.6111 8.80555 64.9451 9.41334 64.7766 9.99305V9.99405Z"
+                fill="white"
+              />
+              <path
+                d="M50.9448 93.3338C50.7773 93.9135 50.1695 94.2485 49.5888 94.08C49.0081 93.9125 48.6741 93.3047 48.8426 92.725C49.0111 92.1433 49.6189 91.8093 50.1986 91.9778C50.7793 92.1463 51.1133 92.753 50.9448 93.3338Z"
+                fill="white"
+              />
+              <path
+                d="M10.4975 36.9766C10.329 37.5573 9.72225 37.8913 9.14154 37.7228C8.56083 37.5553 8.22684 36.9475 8.39433 36.3678C8.56283 35.7871 9.16962 35.4531 9.75033 35.6206C10.331 35.7891 10.665 36.3959 10.4975 36.9766Z"
+                fill="white"
+              />
+              <path
+                d="M55.0228 6.61308L55.4451 8.39032L54.2826 8.26696L55.0228 6.61308ZM57.466 11.6018C57.6195 11.6088 58.1049 11.5877 57.8903 11.4243H57.9635C57.9364 11.2397 57.7198 11.1655 57.6215 11.1755C57.2093 11.0451 57.0999 10.654 56.9756 10.2689C56.7489 9.56178 56.5684 8.81056 56.3908 8.14259L55.7259 5.64523C55.6196 5.23903 55.439 4.42463 55.0048 5.14375C54.9004 5.31526 54.7129 5.74151 54.5905 5.99125C53.9486 7.30412 53.3388 8.63906 52.6629 9.93488C52.5746 10.1044 52.5014 10.314 52.3529 10.4384C52.0972 10.654 52.0771 10.4835 51.8144 10.5637C51.6529 10.6129 51.4854 10.6851 51.5877 10.8847C51.684 11.0712 52.1483 11.0311 52.3128 11.0441C52.5957 11.0662 53.6056 11.3641 53.6748 10.992C53.7842 10.4083 52.9998 11.1123 53.403 10.1515C53.5404 9.94591 53.74 9.01717 54.0058 8.85971C54.1322 8.78448 55.4942 8.9259 55.6035 9.0282C55.7028 9.12148 55.7289 9.50561 55.764 9.638C55.8583 9.99606 55.9616 10.3531 56.0458 10.7142L56.118 10.989L56.0177 11.1414C56.0378 11.332 56.0619 11.4554 56.3537 11.4624C56.7208 11.5105 57.0969 11.5837 57.466 11.6018ZM69.01 16.091C69.7332 16.4792 70.8224 16.7028 71.6027 16.3759C72.4702 16.096 73.1543 15.4882 73.5966 14.6969L73.5324 14.6608L73.5966 14.6959C74.6768 12.7442 73.5615 10.7854 71.6107 10.0121C71.2567 9.87169 70.5927 9.6039 70.2226 9.82856C70.0531 9.93187 69.8114 10.5025 69.7492 10.7062C69.6911 10.8947 69.6048 11.1354 69.8636 11.1715C70.0652 11.1996 70.1645 10.8626 70.2748 10.7613C70.4814 10.5738 70.691 10.5005 70.9799 10.5066C72.6047 10.5387 73.2997 12.4072 72.8092 13.7411C72.3278 13.4743 71.8424 13.2105 71.363 12.9387C71.1975 12.8445 70.673 12.3279 70.5255 12.358C70.2347 12.4924 69.9117 12.9417 69.7562 13.1564C69.3751 13.7782 70.4573 13.2527 70.4854 13.2486C71.017 13.2707 71.8474 13.8564 72.2857 14.1563C72.5756 14.3539 72.5936 14.2757 72.3579 14.6397C72.1403 14.9757 71.8765 15.2947 71.5405 15.5193C70.8916 15.9536 70.1153 15.9165 69.4052 15.5394C68.8155 15.2265 68.2859 14.8193 68.4835 14.0911C68.5617 13.8023 68.6099 13.385 68.1646 13.699C67.9519 13.8494 67.4113 14.6508 67.5869 14.9727C67.7925 15.4582 68.5758 15.8573 69.01 16.091ZM78.0567 22.4337C78.2042 22.0787 77.475 21.9383 77.9293 21.6083C78.3586 21.0697 78.8872 20.6003 79.3746 20.1139C79.3004 21.2232 79.0647 22.8249 79.3646 23.8088C79.4087 24.1398 79.6534 24.4547 79.8971 24.7104L80.2442 25.0575C80.537 25.3263 80.8941 25.3774 80.7085 24.899L80.4097 24.3714C80.2612 23.9311 80.2853 23.4267 80.2783 22.9603C80.2692 22.3384 80.2813 21.7156 80.2923 21.0948L80.3054 20.477C80.3154 20.0347 80.3425 20.0908 80.7828 20.0898C81.4939 20.0888 82.2059 20.0968 82.917 20.1099C83.244 20.1159 83.5399 20.151 83.8398 20.2894C83.9361 20.3335 84.1166 20.5291 84.2239 20.506C84.7505 20.3907 84.0273 19.819 83.8969 19.6926C83.7284 19.5282 83.5559 19.2453 83.3604 19.131C83.0685 18.9605 83.1227 19.0808 82.9471 19.2283C82.7887 19.3617 83.0866 19.3266 82.7435 19.4128C82.5209 19.469 82.208 19.4309 81.9833 19.4329L80.0245 19.464C80.4207 19.0688 80.8459 18.4249 81.3254 18.1651C81.7065 17.9585 81.5992 18.2694 81.9382 18.2694C82.2581 18.2694 82.1678 18.0057 82.0706 17.8392C81.88 17.5132 81.3554 17.115 81.0706 16.8392C80.85 16.6266 80.3264 16.3628 80.533 16.9215C80.7125 17.4059 80.864 17.2474 80.4076 17.7088L78.1259 19.9855C77.8551 20.2543 77.4439 20.829 77.0748 20.9554C76.8311 21.0386 76.5754 20.7287 76.3998 20.8942C76.126 21.153 76.9685 21.7307 77.128 21.9122C77.2674 22.0656 77.8722 22.874 78.0557 22.4317L78.0567 22.4337ZM88.4403 27.7364C89.1855 27.9891 89.8244 28.7233 89.9247 29.5648C90.0621 30.7161 89.2387 31.6409 88.2859 32.1464C87.5547 32.5335 86.634 32.7873 85.8557 32.372C84.8969 31.8605 84.5519 30.651 84.933 29.666C85.4305 28.3993 87.0863 27.3903 88.4413 27.7374L88.4403 27.7364ZM88.1615 33.3419C90.1454 32.8143 91.5455 30.4293 90.2547 28.628C89.9769 27.6832 88.8275 27.0162 87.9118 26.8628C86.3752 26.606 84.7635 27.4716 84.1687 28.9239C83.1678 31.35 85.63 34.0159 88.1615 33.3419ZM88.4022 40.1379C88.2768 40.0436 88.3481 39.7157 88.0903 39.7468C87.8857 39.7718 87.9098 40.0116 87.9078 40.0707C87.8977 40.4559 88.0953 40.9654 88.1625 41.3615C88.1916 41.531 88.2026 42.0887 88.4995 42.0686C88.6259 42.0596 88.7262 41.9182 88.6429 41.8409C88.9047 41.6925 88.4544 41.3956 89.0201 41.2071C89.5235 41.0386 90.0802 40.9724 90.5997 40.8721C90.7331 40.846 91.1393 40.7036 91.2286 40.7698C91.4352 40.9202 91.4933 42.1348 91.5395 42.3735L91.8273 43.8619C91.1032 44.0023 90.1594 44.3544 89.4553 44.2731C89.1414 44.237 89.336 44.2661 89.1374 44.0695C89.021 43.9542 89.0381 43.8288 88.8626 43.8489C88.5747 43.9572 88.9097 46.0303 89.1765 46.1396C89.3771 46.2219 89.4593 46.0433 89.4854 45.9109C89.5546 45.5569 89.333 45.4195 89.7241 45.3252C90.8494 45.0093 92.0309 44.8418 93.1793 44.6211C93.5544 44.5489 93.9486 44.4346 94.3287 44.3995C94.6958 44.3654 94.6476 44.4085 94.8442 44.6191C94.9245 44.7054 95.0408 44.8538 95.101 44.8368C95.4881 44.7575 95.1441 43.9411 95.1 43.7125C95.0498 43.4547 95.0669 43.1117 94.9606 42.872C94.8663 42.6583 94.44 42.4367 94.5102 42.866C94.6496 43.3364 94.3417 43.3755 93.9014 43.4607C93.6728 43.5048 92.6267 43.8599 92.4461 43.7225C92.3739 43.6683 92.3569 43.2621 92.3398 43.1769L91.8454 40.6294L92.9476 40.4167C93.1683 40.3746 93.424 40.2793 93.6467 40.2813C93.8543 40.2833 93.8754 40.3064 94.0368 40.4749C94.1622 40.6053 94.2906 40.9634 94.4842 40.5812C94.5504 40.4508 94.424 40.1369 94.3969 40.0186C94.3016 39.5953 94.2344 39.1691 94.1612 38.7408C94.1351 38.4289 93.6507 38.4339 93.7209 38.7789C94.1993 39.3105 92.7029 39.4419 92.5103 39.48C91.6267 39.6505 90.7451 39.825 89.8605 39.9905C89.6038 40.0396 88.6961 40.3586 88.4022 40.1379ZM89.4303 55.8763C88.3059 52.4011 95.099 51.7391 94.7168 55.3769C94.4481 57.9254 90.1634 58.0056 89.4303 55.8763ZM88.8235 54.2214C88.4423 55.8091 89.1223 57.474 90.6488 58.1601C91.6999 58.6324 93.429 58.6575 94.1732 57.79C95.2514 57.0167 95.5684 55.2425 95.1762 54.0419C94.1963 51.0401 89.5626 51.1474 88.8235 54.2214ZM87.8877 64.0233C87.7443 63.9431 87.4825 63.8639 87.4053 63.7285C87.292 63.5309 87.4996 63.3764 87.4133 63.1969C87.1365 62.6202 86.7022 63.9481 86.6059 64.1587C86.5227 64.3393 86.1696 65.0494 86.6651 64.922C86.8075 64.8849 86.9108 64.602 86.976 64.4847C87.9669 65.1055 89.1554 65.616 90.2126 66.1767C89.4282 66.1998 88.6449 66.2158 87.9017 66.2649C87.3812 66.299 86.8587 66.3261 86.3381 66.3682C85.9711 66.3973 85.4646 66.3612 85.6662 66.8627C85.8447 67.305 86.4916 67.8055 86.7945 68.1495L88.5677 70.1594C87.3912 69.7833 86.1426 69.4895 85.0012 69.0201C84.7916 68.9338 84.8859 68.661 84.5659 68.9709L84.4877 69.1003C84.3292 69.344 84.2349 69.6941 84.1196 69.9629C84.0474 70.1324 83.7345 70.6589 84.0634 70.7452C84.3533 70.8214 84.3994 70.3319 84.5679 70.1996C84.8969 69.9408 85.4024 70.2006 85.7614 70.3099L88.2327 71.0561C88.8305 71.2366 89.4563 71.5024 90.0721 71.6117C90.7411 71.7301 90.4844 71.2507 90.1975 70.9307L86.9419 67.299L90.3119 67.1285C90.8795 67.0994 91.4532 67.0944 92.0189 67.0422C92.2716 67.0192 92.8564 66.8527 92.3418 66.5287C90.8625 65.6832 89.3711 64.8568 87.8857 64.0223L87.8877 64.0233ZM85.0965 78.6244C84.7745 78.7558 84.9079 78.9524 84.5489 78.7588C84.2279 78.5853 83.904 78.1771 83.6261 77.9273L81.6343 76.132C81.2822 75.8141 80.9432 75.447 80.5621 75.1632C80.0837 74.8071 79.9784 75.11 80.0636 75.5804C80.4026 77.4249 80.7055 79.2723 80.9492 81.1318L79.4508 79.7798C79.1209 79.4819 78.0136 78.7548 78.0076 78.3115C78.0056 78.1691 78.2563 78.0688 78.1741 77.8902C77.9965 77.5051 77.6325 78.0216 77.5051 78.1721C77.3195 78.3907 76.0739 79.5341 76.6837 79.6023C76.8813 79.6243 76.9545 79.3435 77.1109 79.2964C77.3085 79.2362 77.4178 79.3545 77.5813 79.4759C78.3075 80.0155 78.9594 80.6875 79.6314 81.2943C79.9353 81.5681 81.558 83.3764 81.898 83.0083C82.0214 82.8739 81.9231 82.6041 81.897 82.4627C81.8068 81.9813 81.7275 81.4989 81.6473 81.0164L81.5009 80.1258C81.3324 79.0677 81.1839 78.0096 81.0405 76.9474L83.5409 79.2021C83.6482 79.2984 83.9742 79.519 84.0002 79.6795C84.0353 79.8891 83.7315 80.0285 83.8659 80.2432C83.9952 80.4478 84.1838 80.2462 84.3011 80.1609C84.5288 79.9964 85.5789 78.9163 85.4605 78.6665C85.3974 78.4739 85.2078 78.5793 85.0955 78.6254L85.0965 78.6244ZM74.3448 88.0883C74.1492 88.0291 74.0339 87.6711 73.9476 87.5276L73.2847 86.4254C72.7792 85.5869 72.1643 84.7394 71.7722 83.8448C71.723 83.7325 71.6117 83.587 71.6378 83.4637C71.6659 83.3313 71.8925 83.3032 71.9136 83.1527C71.9447 82.9331 71.7872 82.8829 71.5866 82.917C71.374 82.9542 71.1483 83.1989 70.9648 83.3112L70.0802 83.8177C69.7151 83.9581 69.9819 84.26 70.2447 84.2339C70.6669 84.1918 70.5175 83.9421 70.8364 84.2951C71.2667 84.7725 71.5987 85.4967 71.9367 86.0603C71.4663 85.9099 70.9919 85.7594 70.5125 85.6381C69.673 85.3703 68.4123 84.92 67.5949 85.3211C67.3522 85.4405 67.0312 85.5959 66.8246 85.7705C66.5227 86.0272 66.5598 86.2519 66.963 86.2017C67.2278 86.1686 67.3933 86.0312 67.6771 86.0302C68.0913 86.0292 68.5136 86.1466 68.9118 86.2388C69.4112 86.3542 69.9067 86.4886 70.4022 86.618L71.2647 86.8496C71.3339 86.8687 71.693 86.9168 71.7281 86.978C71.7782 87.0643 71.6137 87.4574 71.5866 87.5658C71.4001 88.312 71.2416 89.5576 70.8023 90.2025C70.7582 90.2657 70.3941 90.5606 70.3901 90.6619C70.3811 90.8926 70.5907 90.9818 70.7692 90.8605C71.0731 90.6649 71.6709 90.4342 71.9136 90.1714C72.2456 89.8134 71.8624 89.8675 71.7862 89.6409C71.703 89.3941 71.9688 88.7482 72.0259 88.5045L72.4101 86.8466L73.1553 88.0903C73.2245 88.2066 73.4592 88.4905 73.4271 88.6459C73.3809 88.8686 73.056 88.8696 73.1031 89.1294C73.1854 89.5787 74.0178 88.8826 74.1522 88.8034C74.2164 88.7653 75.6035 87.971 74.9014 87.9198C74.8693 87.8757 74.4601 88.1234 74.3448 88.0883ZM63.3915 93.3027C63.2651 93.2305 63.2601 93.062 63.22 92.9366C63.0665 92.4502 62.9743 91.9336 62.8489 91.4382C62.6513 90.6589 62.4126 89.691 62.205 88.8526C62.0886 88.3852 61.8299 86.7865 61.3174 87.9409C60.5571 89.6549 59.7848 91.3589 58.9474 93.0369C58.7438 92.2165 58.5362 91.398 58.3376 90.5766C58.2483 90.2065 57.8873 89.349 58.1571 89.019C58.2553 88.8987 58.5041 88.9137 58.465 88.7021C58.4028 88.3711 56.6295 88.8586 56.4049 88.9789C55.9806 89.2066 56.2063 89.3831 56.5022 89.4142C56.8231 89.4483 56.9535 89.2417 57.0317 89.6298C57.3717 90.6759 57.5984 91.7661 57.8632 92.8343C57.9424 93.1522 58.1841 95.1642 58.6676 95.127C59.0707 95.0067 59.4107 93.7199 59.5893 93.3288L59.9614 92.5164C60.4117 91.5425 60.8841 90.5796 61.3625 89.6188L61.8881 91.734C62.0034 92.1984 62.4838 93.2585 62.1759 93.6567C62.0786 93.7821 61.8038 93.752 61.87 93.9807C61.9432 94.2354 62.193 94.1151 62.3474 94.083C62.6694 94.0148 64.1226 93.8132 64.0615 93.427C63.9802 93.086 63.584 93.412 63.3905 93.3017L63.3915 93.3027ZM41.4207 90.7311C41.3726 90.9377 41.3074 91.6538 41.1449 91.7501C40.9242 91.8815 40.3205 91.4652 40.174 91.3078C39.9644 91.0841 39.834 90.7832 39.7869 90.4824C39.7066 89.9698 39.81 89.2457 40.3435 89.014C40.6143 88.9047 41.6955 88.9428 41.6955 89.4002C41.6955 89.8264 41.517 90.3179 41.4217 90.7321L41.4207 90.7311ZM39.6876 93.739C39.5181 93.2455 39.6124 92.5464 40.0577 92.2175L40.2723 92.0951C40.3526 92.1292 40.9944 92.1904 41.0576 92.3057C41.0978 92.3779 40.9614 92.7189 40.9433 92.7972L40.6013 94.2715C40.1981 94.2715 39.813 94.0408 39.6876 93.739ZM42.2 88.6951C41.5802 88.5356 40.9965 88.2999 40.3425 88.3982C38.5713 88.664 38.2233 90.7983 39.5853 91.8183C38.5984 92.5013 38.1761 93.9115 39.5291 94.5634C40.1991 94.8863 41.0837 94.9606 41.8058 95.1481C41.8941 95.1822 42.1178 95.1571 42.1479 94.9876C42.1799 94.8041 42.0104 94.7931 41.8981 94.7138C41.6554 94.5453 41.6373 94.5433 41.535 94.3688C41.7286 94.1843 41.7808 93.4822 41.852 93.1763L42.2923 91.2717C42.3665 90.9547 42.528 89.5255 42.873 89.326C42.9261 89.2949 43.7375 89.3249 43.2942 88.9649C43.0445 88.7573 42.5129 88.7743 42.201 88.6941L42.2 88.6951ZM29.5397 84.0333C29.7663 83.91 29.6139 83.7244 29.4875 83.6061C29.2147 83.3523 28.7203 83.1798 28.3953 82.9812C28.2388 82.885 27.8206 82.5389 27.6341 82.7375C27.3873 83.0003 27.8798 83.1217 27.9711 83.2761C28.1295 83.5409 27.7945 83.9681 27.6581 84.2139C27.26 84.93 26.8407 85.6371 26.4305 86.3472C26.2309 86.6922 25.574 88.3039 25.0886 87.9399C25.0424 87.9058 24.8378 87.9148 24.7857 88.0402C24.6583 88.3491 25.3754 88.5918 25.5469 88.6881C25.7916 88.8265 26.0554 89.0832 26.3212 89.1605C26.5619 89.2297 26.937 89.0281 26.598 88.8114C26.4867 88.7482 26.4014 88.674 26.3503 88.5537C26.5178 87.984 27.0052 87.3571 27.3071 86.8346C27.8186 85.95 28.281 84.9691 28.8988 84.1577C29.2187 83.7475 29.1917 84.2249 29.5407 84.0353L29.5397 84.0333ZM31.1785 87.6199C31.1314 87.7012 30.999 88.0341 30.9067 88.0652C30.5938 88.1715 30.0652 87.3842 30.0121 87.2689C29.8045 86.5949 30.002 85.3633 30.8586 85.274C31.2748 85.2218 31.9478 85.5588 32.0772 85.9971C31.9989 86.5337 31.4403 87.1686 31.1795 87.6189L31.1785 87.6199ZM32.012 85.0393C30.8997 84.3994 29.3932 84.588 28.9469 85.95C28.7403 86.5829 28.9449 87.2478 29.3722 87.7403C29.645 88.0532 30.2227 88.2157 30.4574 88.5306L30.5456 88.7151C30.5436 88.8285 30.3521 89.0481 30.2969 89.1454C30.1023 89.4814 29.9368 89.8776 29.6971 90.1825C29.3872 90.5766 29.5086 90.2778 29.1576 90.3098C28.8366 90.3399 28.8547 90.5395 29.0603 90.7441C29.1796 90.8625 29.4233 90.9367 29.5758 91.0219C29.8366 91.1674 30.1445 91.4612 30.4203 91.5304C30.5527 91.5635 30.663 91.6769 30.7894 91.5104C30.9759 91.2637 30.6179 91.2105 30.5346 91.0611C30.344 90.718 30.7462 90.3048 30.9238 89.9979C31.345 89.2698 31.7632 88.5406 32.1875 87.8135C32.4292 87.3983 32.6529 86.8747 32.9818 86.5167C33.3429 86.1235 33.1222 86.4715 33.5465 86.4134C33.7722 86.3682 33.8394 86.1215 33.5846 85.9751C33.046 85.6802 32.5425 85.3442 32.011 85.0383L32.012 85.0393ZM19.827 75.6516C19.7478 75.6326 19.5954 75.6767 19.48 75.7369C19.3246 75.8251 18.6074 76.2464 18.6716 76.3818L18.6135 76.3346C18.3296 76.5964 18.6235 76.7368 18.8441 76.7208C18.9464 76.7128 19.2052 76.5252 19.1912 76.5332C19.7739 76.3176 20.2583 76.7218 20.6515 77.121C21.4328 77.9333 21.6544 79.1279 21.182 80.1599C20.7628 81.0736 19.6535 82.0274 18.5904 81.9071C17.6426 81.8008 16.4742 80.7537 16.3648 79.7868C16.3107 79.3034 16.6858 79.1971 16.762 78.839C16.8132 78.6023 16.6035 78.4268 16.3939 78.5993C16.0068 78.8801 15.1984 79.3766 15.3508 79.843C15.4291 80.0827 15.744 80.3876 15.8975 80.5982C16.2986 81.1498 16.752 81.6754 17.3186 82.0655C18.3407 82.7686 19.6375 82.8659 20.7096 82.216C21.2031 81.9171 21.6324 81.4868 21.9443 81.0024C22.1098 80.7446 22.6865 79.6043 22.3976 79.3576C22.5671 78.9283 22.2121 78.1299 21.9754 77.7127C21.5692 76.9886 20.6936 75.8623 19.827 75.6516ZM15.6738 71.1664C15.9566 71.0541 15.8744 71.2757 16.1472 71.3931C16.2716 71.4472 16.5714 71.5114 16.4441 71.2426C16.5353 70.9799 16.078 70.342 15.9225 70.01C15.5494 69.2076 15.1713 68.4083 14.8022 67.6049C14.3539 66.627 13.8946 65.6602 13.4392 64.6793C13.2527 64.2781 13.1112 63.6252 12.8274 63.3072C12.7111 63.1778 12.5887 63.0074 12.4212 63.1969C12.2497 63.3905 12.5847 63.6603 12.5205 63.8589C12.4032 64.2209 10.8756 64.7425 10.653 64.8458L8.5528 65.8236C8.33817 65.9239 7.87982 66.2288 7.64613 66.1506C7.48967 66.0975 7.19981 65.4355 7.07244 66.0112C7.01727 66.2599 7.36931 66.6752 7.46961 66.8868C7.60902 67.1827 7.69226 67.6159 7.92997 67.8526C8.47056 68.2167 8.11652 67.2779 8.16566 67.1676C8.31911 66.8246 9.53771 66.4716 9.8426 66.3291L11.3711 65.618C11.7733 65.4315 12.2728 65.0534 12.697 65.0363C12.9879 65.0253 12.7963 64.9711 12.9608 65.1507C13.1895 65.3984 13.3178 65.9179 13.4603 66.2228C13.5255 66.3632 13.8855 66.8978 13.8494 67.0583C13.7732 67.3943 12.5576 67.7473 12.2116 67.9098L10.6289 68.645C10.2588 68.8175 9.38626 69.4203 9.03021 69.2036C8.88879 69.1174 8.93593 68.8847 8.69021 68.9218C8.46956 68.9549 8.53675 69.1575 8.56283 69.2949C8.60696 69.5316 8.8236 69.8014 8.9259 70.021C9.02018 70.2216 9.12248 70.7722 9.33912 70.8816C9.66207 71.044 9.75735 70.6669 9.62597 70.5305C9.48555 70.0441 10.6089 69.7623 10.9338 69.6108C11.8004 69.2056 12.8144 68.7884 13.5846 68.3782C13.6047 68.3702 14.3058 68.0342 14.3409 68.1154C14.6077 68.6781 14.8795 69.2648 15.1513 69.8515C15.2445 70.0541 15.2907 70.0641 15.2084 70.1965C15.067 70.4242 14.4612 70.5847 14.1974 70.7091C13.1243 71.2135 12.0551 71.7732 10.9559 72.2195C10.7082 72.3198 10.6369 72.3379 10.4293 72.2215C10.2859 72.1413 10.0512 71.717 9.94691 72.1874C9.88272 72.4773 10.4634 73.3679 10.5998 73.6517C10.6771 73.8122 10.7423 74.1201 10.987 74.068C11.3581 73.9877 10.992 73.6427 11.0251 73.4652C11.0963 73.0861 11.7272 72.9657 12.0541 72.8133C13.2256 72.2697 14.385 71.6558 15.5956 71.2015L15.6758 71.1654L15.6738 71.1664ZM8.30808 57.0929L6.52282 56.775L8.1466 55.9365L8.30808 57.0929ZM11.0873 58.6706C11.1424 58.7719 11.0883 58.9183 11.1645 59.0106C11.343 59.2282 11.6499 59.1189 11.5526 58.7809C11.5206 58.5362 11.5035 57.1772 11.2106 57.0458C10.8716 56.8933 10.9298 57.3757 10.8646 57.5262C10.4484 57.5693 9.95895 57.4118 9.53169 57.3306C8.95599 57.2213 8.95398 57.2614 8.87375 56.6847C8.81858 56.2895 8.62702 55.8161 8.86974 55.5504C9.1275 55.2685 9.92585 54.8894 10.2989 54.7671L10.5366 54.6427L10.666 54.7259C10.99 54.5976 10.9138 54.3669 10.8767 54.055C10.8536 53.8584 10.8656 52.7411 10.5166 52.7581C10.2067 52.7732 10.3351 53.1563 10.305 53.3398C10.1686 53.7109 9.72526 53.9226 9.40231 54.1111C8.62702 54.5604 7.8407 54.9907 7.05639 55.424L5.92205 56.0498C5.72145 56.1602 4.75059 56.5413 4.72251 56.8462C4.67637 57.3356 7.55285 57.6746 7.85374 57.7398L10.3872 58.2814C10.666 58.3286 10.9469 58.4168 11.0873 58.6726V58.6706ZM5.46369 43.8338C5.54894 43.7767 5.97721 43.897 6.0755 43.91C6.52382 43.9652 7.40241 43.897 7.79256 44.1227C8.41038 44.4797 7.40642 45.4997 6.99621 45.6472C6.19485 45.934 5.1267 45.581 5.25107 44.584C5.27614 44.4316 5.33532 43.9201 5.46369 43.8338ZM8.06536 45.8788C8.73233 46.3723 9.58785 46.9289 10.0241 47.6521C10.2107 47.961 10.1345 48.1947 10.2167 48.4946C10.2508 48.6169 10.2699 48.7684 10.4233 48.7674C10.7182 48.7664 10.7072 48.1656 10.7302 47.9389C10.8426 46.8628 10.1936 46.3031 9.38525 45.6421C9.14154 45.4426 8.5869 45.1537 8.50767 44.8639C8.26595 43.9813 9.09139 44.2791 9.60892 44.3513C9.96898 44.4015 10.5256 44.3764 10.656 44.7405C10.6911 44.8388 10.6018 45.4034 10.8566 45.24C11.1444 45.4014 11.1856 44.0705 11.2116 43.894C11.2237 43.8097 11.4182 42.5701 10.9368 43.0475C10.7051 43.4025 10.8616 43.4567 10.305 43.4326C9.50461 43.3975 8.70024 43.2551 7.90389 43.1568L6.33426 42.9633C5.90399 42.9101 5.31124 42.9512 5.41956 42.3805C5.42959 42.2532 5.38346 42.1689 5.25107 42.1268L5.23 42.197C5.13974 42.0335 5.04145 42.2241 4.97425 42.3876C4.85991 42.6674 4.91508 43.0846 4.86593 43.3885C4.75661 44.0635 4.53295 44.7957 4.76965 45.4295C5.1929 46.9901 7.20483 47.1606 8.06637 45.8778L8.06536 45.8788ZM24.5299 20.0196C24.2501 19.8441 24.1378 20.2242 23.894 20.2011C23.7747 20.1891 23.5791 19.9434 23.5019 19.8591C23.0826 19.4038 22.7206 18.8893 22.3415 18.4008C23.5109 18.6265 24.7957 18.9224 25.9802 18.8682C26.4425 18.8301 27.1617 18.445 27.4706 18.0498C27.7153 17.7359 27.6321 17.5624 27.2529 17.6586L26.8518 17.8542C26.1547 18.0739 25.241 17.8472 24.5379 17.7559C24.1117 17.7008 23.6844 17.6446 23.2582 17.5834C23.0686 17.5563 22.8018 17.5764 22.6393 17.4932C22.4157 17.3788 22.523 17.5814 22.4518 17.3016C22.4177 17.1662 22.4979 16.9155 22.515 16.7801C22.5952 16.1402 22.6774 15.4973 22.7707 14.8594C22.8068 14.6097 22.8469 14.3669 22.9683 14.1403C23.0525 13.9838 23.4327 13.6879 23.2722 13.4884C23.0475 13.2075 22.4849 13.8584 22.3204 13.9848C22.178 14.0941 21.9182 14.1974 21.8219 14.3449C21.6163 14.6628 21.7968 14.5615 21.9292 14.7461L22.0576 14.8895C22.1439 15.1131 21.9834 15.7199 21.9583 15.9526L21.7758 17.6747L21.0707 16.77C20.9473 16.6106 20.7237 16.418 20.6465 16.2264C20.5311 15.9396 20.6184 16.0479 20.7056 15.7831C20.7798 15.5565 20.9293 15.2656 20.4599 15.412C20.157 15.5063 19.7859 15.9586 19.5231 16.1502C19.3958 16.2425 18.781 16.5875 19.0056 16.8342C19.2413 17.092 19.5141 16.5805 19.823 16.756C20.2242 16.9847 20.7036 17.8763 20.9834 18.2353C21.6123 19.0407 22.53 19.9845 22.9292 20.843C22.9683 20.9965 22.3846 21.7668 23.1137 21.4468C23.4006 21.3214 23.6954 20.9684 23.9572 20.7748C24.1899 20.6033 24.7526 20.3416 24.5299 20.0166V20.0196ZM32.4442 13.8725C31.1374 13.4422 30.0482 11.658 30.4333 10.2959C30.7773 9.07835 32.2105 8.4836 33.3479 8.96201C34.4672 9.43139 35.2224 10.8446 35.2224 12.0301C35.2224 13.4412 33.717 14.2917 32.4442 13.8735V13.8725ZM31.6308 8.32312C30.0512 8.96 29.1365 10.5808 29.5918 12.2597C30.0973 14.1232 31.9959 15.2495 33.8434 14.5695C35.6056 13.9206 36.5544 12.0611 35.9125 10.2638C35.2635 8.43646 33.4362 7.59498 31.6308 8.32312ZM47.3261 10.5427C46.602 10.303 46.1587 9.02218 45.8167 8.40837C45.247 7.38436 44.7325 6.28311 44.0996 5.2972C43.6523 4.59914 43.4888 5.24505 43.3955 5.68134L42.6363 9.2318C42.4939 9.89977 42.4548 11.2959 41.6855 11.3661C41.5862 11.3761 41.4648 11.4704 41.4799 11.6078C41.5641 11.9528 43.3574 11.683 43.563 11.4594C43.7827 11.1023 43.221 11.2217 43.1257 11.1364C42.9793 11.005 43.1408 10.5457 43.1789 10.3451C43.4106 9.13452 43.6272 7.97309 43.8428 6.7555C44.4526 7.93297 45.0243 9.01416 45.6492 10.1585C45.7475 10.3391 45.926 10.5597 45.9771 10.7603C45.9902 10.8085 45.8508 10.9017 45.8899 10.982C45.9982 11.2046 46.1827 11.1414 46.3873 11.1314C46.6672 11.1184 47.8386 11.1354 47.8617 10.7262C47.7574 10.4043 47.5418 10.6149 47.3271 10.5447L47.3261 10.5427ZM9.74431 29.5327C9.86968 29.5056 10.0793 29.6731 10.1966 29.7443C10.8004 30.1063 11.3922 30.4915 11.9889 30.8656C12.6489 31.2798 13.371 31.6569 13.9768 32.1434L14.0781 32.2196C14.4171 32.6057 14.1002 32.3118 14.1814 32.6709C14.2807 33.1082 14.5013 32.9828 14.7069 32.6468C14.9406 32.2637 15.1683 31.8786 15.407 31.4985C16.0118 30.5316 16.7229 29.5106 17.2665 28.5668C17.8532 27.5478 18.5202 26.5599 19.1521 25.5589C19.2754 25.3975 19.1892 25.1287 18.9284 25.1818C18.7709 25.2139 18.6004 25.5469 18.5513 25.6021C18.2414 25.6291 17.8793 25.3242 17.6205 25.1688C17.0639 24.8328 16.5153 24.4828 15.9636 24.1367C15.392 23.7787 14.5856 23.4577 14.1172 22.9803C13.8274 22.6845 14.0179 22.8419 14.0189 22.5511C14.0189 22.3966 14.1583 22.1669 13.8384 22.18C13.5686 22.191 13.3359 22.8449 13.2286 23.0164C13.0942 23.2311 12.5466 23.7787 12.691 24.0625C12.8725 24.4206 13.1895 23.8308 13.3901 23.7366C13.9748 23.9763 14.5826 24.4547 15.1352 24.8007C15.9626 25.3182 16.8934 25.9401 17.6436 26.4044C17.8793 26.6301 17.5533 26.8748 17.3959 27.1256C17.2474 27.3633 16.8142 28.3883 16.5504 28.4735C16.3388 28.5427 15.5895 27.951 15.39 27.8276L13.9116 26.9039C13.4081 26.588 12.7853 26.3041 12.335 25.918C12.2266 25.8257 12.1314 25.7545 12.1193 25.6402C12.0983 25.4516 12.4142 25.3042 12.1534 25.1206C11.8977 24.9421 10.6941 26.6702 10.98 26.9601C11.2518 27.1165 11.2508 26.8116 11.4203 26.7324C11.7151 26.593 12.0802 26.94 12.35 27.1095L14.4291 28.4103C14.7912 28.638 15.5073 28.973 15.7801 29.2909C15.9797 29.5236 15.9195 29.3591 15.8142 29.653C15.7219 29.9118 15.4882 30.1735 15.3428 30.4062C15.2004 30.6339 15.0379 31.0541 14.8293 31.2267L14.6618 31.3109C14.4281 31.3179 13.9116 30.8856 13.704 30.7573L12.0993 29.7543C11.9217 29.644 10.649 28.6952 10.4644 28.8186C10.5266 28.6681 10.3441 28.7082 10.324 28.5347L10.4243 28.281C10.3832 27.951 10.3 27.8627 10.0001 28.1285C9.77942 28.3241 9.639 28.7483 9.47151 29.0061C9.40231 29.1114 8.7213 29.9499 9.26189 29.9499C9.49859 29.9499 9.52366 29.5818 9.74331 29.5347L9.74431 29.5327Z"
+                fill="white"
+              />
+              <path
+                d="M35.6808 73.5454L37.1642 70.6599V30.344H43.7064V70.6158H48.3311V54.8864H54.3689V70.5997H59.6023V63.4396C59.6023 59.1008 59.3776 53.065 54.4943 49.9478L57.3386 48.9028C63.225 51.0922 66.1717 56.8061 66.1717 64.3353V70.6619L67.6541 73.5454H35.6808ZM47.3281 25.5619L47.5728 25.566H50.0371C54.9025 25.566 56.9395 26.4225 59.2443 28.1987C62.5961 30.8275 63.1257 34.6417 63.1257 36.5513C63.1257 38.9193 62.4006 41.4197 60.6253 43.4577C59.3094 45.0354 57.0217 47.3271 52.5355 47.8627C49.4684 48.2348 47.2028 48.0974 46.0724 47.975V45.5669C46.5759 45.6351 47.3171 45.7023 48.3271 45.7023C51.3791 45.7023 53.5414 44.1748 54.8563 42.529C56.3507 40.7146 56.6637 39.0056 56.7288 37.4781H48.3321V35.1121H56.6546C56.442 33.5134 55.8312 32.2918 54.8393 31.0913C52.9316 28.7233 50.2347 28.3291 48.4575 28.3291L36.4671 28.3241L35.0519 25.5609H47.3291L47.3281 25.5619ZM14.1684 50C14.1684 69.7863 30.2137 85.8316 49.999 85.8316C69.7843 85.8316 85.8316 69.7853 85.8316 50C85.8316 30.2137 69.7843 14.1694 49.999 14.1694C30.2137 14.1694 14.1684 30.2147 14.1684 50Z"
+                fill="white"
+              />
+            </svg>
+            <div class="certificate-card__amount">4</div>
+            <div class="certificate-card__title">MOST HSE</div>
+            <div class="certificate-card__name">Некрасова Екатерина Андреевна</div>
+            <div class="certificate-card__logos">
+              <picture class="certificate-card__logo">
+                <source media="(max-width: 500px)" srcset="assets/images/logo-organizator-2-mobail.svg" />
+                <img class="certificate-card__img" src="assets/images/logo-organizator-2.svg" alt="" />
+              </picture>
+              <picture class="certificate-card__logo">
+                <source media="(max-width: 500px)" srcset="assets/images/logo-organizator-mobail.png" />
+                <img class="certificate-card__img" src="assets/images/logo-organizator.png" alt="" />
+              </picture>
+              <picture class="certificate-card__logo">
+                <source media="(max-width: 500px)" srcset="assets/images/logo-organizator-3-mobail.svg" />
+                <img class="certificate-card__img" src="assets/images/logo-organizator-3.svg" alt="" />
+              </picture>
+              <picture class="certificate-card__logo">
+                <source media="(max-width: 500px)" srcset="assets/images/logo-organizator-4-mobail.svg" />
+                <img class="certificate-card__img" src="assets/images/logo-organizator-4.svg" alt="" />
+              </picture>
+              <picture class="certificate-card__logo">
+                <source media="(max-width: 500px)" srcset="assets/images/logo-organizator-4-mobail.svg" />
+                <img class="certificate-card__img" src="assets/images/logo-organizator-4.svg" alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="certificate">
+        <div class="container">
+          <div class="min-title">Сертификат участника</div>
+          <div class="interview-box interview-box--block box">
+            <div class="interview-box__text">
+              После окончания дней карьеры, здесь появится сертификат, подтверждающий ваше участие в HSE MOST. На сертификате будет количество
+              пройденых собеседований.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <svg class="footer__bg" width="940" height="265" viewBox="0 0 940 265" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M170.307 239.26c24.71-18.377 60.931-33.44 65.361-57.297 10.326-55.601-83.389-126.492-23.471-168.273 47.67-33.24 161.31 2.939 242.861 15.294 76.05 11.522 170.262 16.827 215.452 54.14 47.982 39.618-35.535 91.917 10.247 132.219 57.017 50.193 233.687 47.275 257.045 103.08 20.081 47.976-102.066 70.037-176.37 89.665-58.659 15.495-129.66 12.558-198.516 9.363-49.564-2.3-94.312-20.178-143.87-25.252-49.653-5.083-96.481.248-146.167-4.443-91.082-8.599-233.684 14.213-267.401-34.6-35.535-51.445 111.397-74.159 164.829-113.897z"
+          fill="#122243"
+        />
+      </svg>
+      <div class="footer__container container">
+        <div class="footer__head">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="assets/images/logo-footer.png" alt="" />
+          </a>
+          <nav class="footer__nav">
+            <a class="footer__nav-element" href="#">О событии</a>
+            <a class="footer__nav-element" href="#">Юрфирмы</a>
+            <a class="footer__nav-element" href="#">Выставка</a>
+            <a class="footer__nav-element" href="#">Организаторы</a>
+            <a class="footer__nav-element" href="#">Баттл-арена</a>
+          </nav>
+          <div class="socials">
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.177 6.023c.148-.494 0-.858-.706-.858h-2.334c-.593 0-.867.314-1.015.66 0 0-1.187 2.893-2.868 4.772-.544.544-.791.717-1.088.717-.148 0-.363-.173-.363-.667v-4.624c0-.593-.172-.858-.667-.858h-3.668c-.371 0-.594.275-.594.536 0 .563.841.692.927 2.275v3.437c0 .754-.136.89-.433.89-.791 0-2.716-2.906-3.857-6.231-.224-.646-.448-.907-1.045-.907h-2.334c-.667 0-.8.314-.8.66 0 .618.791 3.684 3.684 7.739 1.929 2.769 4.646 4.27 7.118 4.27 1.484 0 1.667-.334 1.667-.908v-2.093c0-.667.14-.8.61-.8.346 0 .94.173 2.325 1.508 1.582 1.582 1.843 2.292 2.733 2.292h2.334c.667 0 1-.334.808-.991-.21-.656-.966-1.607-1.968-2.735-.544-.643-1.36-1.335-1.607-1.681-.346-.445-.247-.643 0-1.038 0 0 2.843-4.006 3.14-5.366z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M12.068 21.666v-9.731h3.266l.489-3.792h-3.755v-2.421c0-1.098.305-1.846 1.88-1.846l2.008-.001v-3.392c-.348-.046-1.539-.149-2.926-.149-2.895 0-4.878 1.767-4.878 5.013v2.797h-3.275v3.792h3.275v9.731h3.916z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M11 7.333c-2.025 0-3.666 1.642-3.666 3.667s1.641 3.667 3.666 3.667 3.667-1.642 3.667-3.667-1.642-3.667-3.667-3.667z"
+                  fill="#fff"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.45 1.525c.635-.247 1.363-.416 2.427-.464 1.067-.049 1.408-.061 4.124-.061 2.716 0 3.056.012 4.123.061 1.064.048 1.791.217 2.427.464.657.255 1.215.597 1.771 1.153.556.557.897 1.114 1.153 1.771.247.635.416 1.363.465 2.427.048 1.066.06 1.407.06 4.123s-.011 3.056-.06 4.123c-.048 1.065-.217 1.792-.465 2.427-.256.657-.597 1.216-1.153 1.771-.557.556-1.114.898-1.771 1.154-.636.247-1.363.416-2.427.464-1.066.049-1.407.061-4.123.061s-3.056-.012-4.123-.061c-1.065-.048-1.791-.217-2.427-.464-.658-.256-1.215-.598-1.771-1.154-.556-.555-.898-1.114-1.153-1.771-.247-.636-.416-1.363-.464-2.427-.049-1.066-.061-1.407-.061-4.123s.011-3.057.061-4.123c.048-1.065.217-1.792.464-2.427.255-.658.597-1.216 1.153-1.771.557-.556 1.114-.898 1.771-1.153zm6.55 15.123c-3.12 0-5.648-2.529-5.648-5.648 0-3.12 2.529-5.648 5.648-5.648 3.12 0 5.648 2.529 5.648 5.648 0 3.12-2.529 5.648-5.648 5.648zm4.774-10.787c-.145-.217-.222-.472-.222-.733 0-.35.139-.685.387-.933.248-.247.584-.386.934-.387.261 0 .516.078.733.223.217.145.386.351.486.593.1.241.126.507.075.763-.051.256-.177.491-.362.676-.185.185-.42.31-.676.361-.256.051-.521.025-.763-.075-.241-.1-.447-.269-.592-.486z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.557 18.922c1.118.489 1.538-.536 1.538-.536l2.959-14.865c-.023-1.002-1.375-.396-1.375-.396l-16.565 6.5s-.792.28-.722.769c.07.489.699.722.699.722l4.17 1.398s1.258 4.124 1.514 4.916c.233.769.443.792.443.792.233.093.443-.07.443-.07l2.703-2.446 4.194 3.215zm.722-12.768s.582-.349.559 0c0 0 .093.047-.21.373-.28.28-6.873 6.197-7.758 6.99-.07.047-.116.117-.116.21l-.256 2.19c-.047.233-.349.256-.419.047l-1.095-3.588c-.047-.14 0-.303.14-.396l9.156-5.825z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+          </div>
+          <a class="footer__link" href="#">law.hse.ru</a>
+        </div>
+        <div class="footer__down">
+          <div class="footer__down-text">© 2020 ВШЭ Юридический факультет</div>
+          <a class="footer__down-text footer__down-text--margin" href="#">Соглашение</a>
+          <a class="footer__down-text" href="#">Политика конфиденциальности</a>
+          <div class="footer__down-design">Задизайнено с любовью в ❤ MateÇa</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

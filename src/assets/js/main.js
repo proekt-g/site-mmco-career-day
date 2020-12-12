@@ -1,8 +1,8 @@
-// document.onreadystatechange = function () {
-//     if (document.readyState === "interactive") {
-
-//     }
-// }
+document.onreadystatechange = function () {
+    if (document.readyState === "interactive") {
+        $(window).width() <= 1150 && $('.about__work').appendTo('.about__container')
+    }
+}
 window.addEventListener("load", function () {
     // variables
     let checkTestVerify = false;
@@ -31,9 +31,12 @@ window.addEventListener("load", function () {
                 //Данные отправлены успешно
                 // let result = $.parseJSON(response)
                 // console.log(result)
+
+            },
+            error: function (response) {
                 ajaxForm === 'interview-form' &&
-                    $.parseJSON(response) === 'true'
-                    // true
+                    // $.parseJSON(response) === 'true'
+                    true
                     // false
                     ? (
                         scrollEmulation(),
@@ -44,8 +47,6 @@ window.addEventListener("load", function () {
                         $(element).toggleClass('interview__block-label--close'),
                         $(element).find('.interview__block-label-text').text('Занято')
                     )
-            },
-            error: function (response) {
                 // Данные не отправлены
                 // console.log($.parseJSON(response))
 
@@ -56,7 +57,7 @@ window.addEventListener("load", function () {
     function closePopap() {
 
         $('.input-hidden').prop('checked', false);
-        scrollEmulation()
+
         $(".modal-overlay").removeClass("modal-overlay--active")
         $(".popap").removeClass("popap--active")
     }
@@ -94,6 +95,36 @@ window.addEventListener("load", function () {
         ajaxRequest("new-password-form", "test.php")
     })
     // /Форма Нового пароля
+    // Форма Редактирования профиля в личном кабинете
+    $("#personal-area-edit").on("submit", (e) => {
+        e.preventDefault()
+        ajaxRequest("personal-area-edit", "test.php")
+    })
+    /// Форма Редактирования профиля в личном кабинете
+    // Форма Редактирования резюме в личном кабинете
+    $("#personal-area-edit-cv").on("submit", (e) => {
+        e.preventDefault()
+        ajaxRequest("personal-area-edit-cv", "test.php")
+    })
+    /// Форма Редактирования резюме в личном кабинете
+    // Форма Редактирования видео в личном кабинете
+    $("#personal-area-edit-video").on("submit", (e) => {
+        e.preventDefault()
+        ajaxRequest("personal-area-edit-video", "test.php")
+    })
+    /// Форма Редактирования видео в личном кабинете
+    // удалили резюме в личном кабинете
+    $("#delete-cv").on("submit", (e) => {
+        e.preventDefault()
+        ajaxRequest("delete-cv", "test.php")
+    })
+    // /удалили резюме в личном кабинете
+    // удалили видео в личном кабинете
+    $("#delete-video").on("submit", (e) => {
+        e.preventDefault()
+        ajaxRequest("delete-video", "test.php")
+    })
+    // /удалили видео в личном кабинете
 
 
     // Клик на время собеседования
@@ -166,7 +197,10 @@ window.addEventListener("load", function () {
         closePopap();
     })
     $(".modal-overlay").on("click", (e) => {
-        if ($(e.target).hasClass("modal-overlay--active")) closePopap()
+        if ($(e.target).hasClass("modal-overlay--active")) {
+            scrollEmulation()
+            closePopap()
+        }
     })
     $('.popap__content-answer-input').on('input', function () {
         $(this).parent().toggleClass('popap__content-answer--active')
@@ -223,7 +257,7 @@ window.addEventListener("load", function () {
                         $('.popap__content-stage--test').addClass('popap__content-stage--hidden'),
                         $('.popap__content-stage--success').removeClass('popap__content-stage--hidden'),
                         $('.interview__block').remove(),
-                        $('.interview__box--whait').removeClass('interview__box--hidden')
+                        $('.interview-box--whait').removeClass('interview-box--hidden')
                     )
 
             }
@@ -234,7 +268,7 @@ window.addEventListener("load", function () {
                 $('.popap__content-stage--test').addClass('popap__content-stage--hidden'),
                 $('.popap__content-stage--fail').removeClass('popap__content-stage--hidden'),
                 $('.interview__block').remove(),
-                $('.interview__box--block').removeClass('interview__box--hidden')
+                $('.interview-box--block').removeClass('interview-box--hidden')
             )
 
         }
@@ -259,9 +293,30 @@ window.addEventListener("load", function () {
         )
         const share = (($(e.target).hasClass('popap__close') && $(e.target)) || ($(e.target).parents('.popap__close').length && $($(e.target).parents('.popap__close')[0])) || null);
         share && (
+            scrollEmulation(),
             $('.modal-overlay').removeClass('modal-overlay--active'),
-            $('.popap__info').removeClass('popap--active')
+            $('.popap').removeClass('popap--active')
         )
+    })
+    $('button.about__edit').on('click', () => {
+        scrollEmulation()
+        $('.modal-overlay').toggleClass('modal-overlay--active')
+        $('.popap__edit').toggleClass('popap--active')
+    })
+    $('.about__work .play').on('click', () => {
+        scrollEmulation()
+        $('.modal-overlay').toggleClass('modal-overlay--active')
+        $('.popap__video').toggleClass('popap--active')
+    })
+    $('.about__work-box-controls-edit--cv').on('click', () => {
+        scrollEmulation()
+        $('.modal-overlay').toggleClass('modal-overlay--active')
+        $('.popap__edit-cv').toggleClass('popap--active')
+    })
+    $('.about__work-box-controls-edit--video').on('click', () => {
+        scrollEmulation()
+        $('.modal-overlay').toggleClass('modal-overlay--active')
+        $('.popap__edit-video').toggleClass('popap--active')
     })
     // /event
     // ----------------------------------------------
@@ -278,7 +333,7 @@ window.addEventListener("load", function () {
                     $('.popap__content-stage--test').addClass('popap__content-stage--hidden'),
                     $('.popap__content-stage--fail').removeClass('popap__content-stage--hidden'),
                     $('.interview__block').remove(),
-                    $('.interview__box--block').removeClass('interview__box--hidden')
+                    $('.interview-box--block').removeClass('interview-box--hidden')
 
                     // Отправка формы, если время истекло
 
@@ -384,15 +439,20 @@ window.addEventListener("load", function () {
     });
 
 
-    new Swiper('.webinars__slider .swiper-container', {
-        spaceBetween: 20,
-        slidesPerView: 'auto',
-        grabCursor: true,
-        navigation: {
-            nextEl: '.webinars__slider .slider-arrow--right',
-            prevEl: '.webinars__slider .slider-arrow--left',
-        },
-    });
+
+    (($('.webinars__slider .swiper-container .swiper-slide').length > 3) || $(window).width() <= 1150)
+        ? new Swiper('.webinars__slider .swiper-container', {
+            spaceBetween: 20,
+            slidesPerView: 'auto',
+            grabCursor: true,
+            navigation: {
+                nextEl: '.webinars__slider .slider-arrow--right',
+                prevEl: '.webinars__slider .slider-arrow--left',
+            },
+        }) : (
+            $('.webinars__slider').addClass('webinars__slider--disabled'),
+            $('.webinars .slider-arrow').fadeOut(0)
+        )
     new Swiper('.team__slider .swiper-container', {
         spaceBetween: 20,
         slidesPerView: 'auto',

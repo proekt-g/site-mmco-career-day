@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <picture class="header__logo-picture">
+            <source media="(max-width: 500px)" srcset="assets/images/logo-mobail.png" />
+            <img class="header__logo-img" src="assets/images/logo.png" alt="" />
+          </picture>
+        </a>
+        <nav class="menu">
+          <aside class="menu__burger">
+            <span class="menu__burger-line menu__burger-line--first"></span>
+            <span class="menu__burger-line menu__burger-line--middle"></span>
+            <span class="menu__burger-line menu__burger-line--last"></span>
+          </aside>
+          <div class="menu__desktop">
+            <a class="menu__desktop-element" href="#">О событии</a>
+            <a class="menu__desktop-element" href="#">Юрфирмы</a>
+            <a class="menu__desktop-element" href="#">Организаторы</a>
+            <a class="menu__desktop-element" href="#">Баттл-арена</a>
+          </div>
+        </nav>
+        <a class="header__user">
+          <div class="header__user-name">Екатерина Некрасова</div>
+          <img class="header__user-avatar" src="assets/images/user-avatar.jpg" alt="" />
+        </a>
+        <!-- <button class="min-button">Войти в кабинет</button> -->
+      </div>
+    </header>
+    <main class="arena">
+      <picture class="bg-picture-sub bg-picture-sub--one">
+        <source media="(max-width: 500px)" srcset="assets/images/bg-one-mobail-arena.svg" />
+        <img class="bg-picture-sub__img" src="assets/images/bg-one-arena.svg" alt="" loading="lazy" />
+      </picture>
+      <picture class="bg-picture-sub bg-picture-sub--two">
+        <source media="(max-width: 500px)" srcset="assets/images/bg-two-mobail-arena.svg" />
+        <img class="bg-picture-sub__img" src="assets/images/bg-two-arena.svg" alt="" loading="lazy" />
+      </picture>
+    </main>
+    <footer class="footer">
+      <svg class="footer__bg" width="940" height="265" viewBox="0 0 940 265" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M170.307 239.26c24.71-18.377 60.931-33.44 65.361-57.297 10.326-55.601-83.389-126.492-23.471-168.273 47.67-33.24 161.31 2.939 242.861 15.294 76.05 11.522 170.262 16.827 215.452 54.14 47.982 39.618-35.535 91.917 10.247 132.219 57.017 50.193 233.687 47.275 257.045 103.08 20.081 47.976-102.066 70.037-176.37 89.665-58.659 15.495-129.66 12.558-198.516 9.363-49.564-2.3-94.312-20.178-143.87-25.252-49.653-5.083-96.481.248-146.167-4.443-91.082-8.599-233.684 14.213-267.401-34.6-35.535-51.445 111.397-74.159 164.829-113.897z"
+          fill="#122243"
+        />
+      </svg>
+      <div class="footer__container container">
+        <div class="footer__head">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="assets/images/logo-footer.png" alt="" />
+          </a>
+          <nav class="footer__nav">
+            <a class="footer__nav-element" href="#">О событии</a>
+            <a class="footer__nav-element" href="#">Юрфирмы</a>
+            <a class="footer__nav-element" href="#">Выставка</a>
+            <a class="footer__nav-element" href="#">Организаторы</a>
+            <a class="footer__nav-element" href="#">Баттл-арена</a>
+          </nav>
+          <div class="socials">
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.177 6.023c.148-.494 0-.858-.706-.858h-2.334c-.593 0-.867.314-1.015.66 0 0-1.187 2.893-2.868 4.772-.544.544-.791.717-1.088.717-.148 0-.363-.173-.363-.667v-4.624c0-.593-.172-.858-.667-.858h-3.668c-.371 0-.594.275-.594.536 0 .563.841.692.927 2.275v3.437c0 .754-.136.89-.433.89-.791 0-2.716-2.906-3.857-6.231-.224-.646-.448-.907-1.045-.907h-2.334c-.667 0-.8.314-.8.66 0 .618.791 3.684 3.684 7.739 1.929 2.769 4.646 4.27 7.118 4.27 1.484 0 1.667-.334 1.667-.908v-2.093c0-.667.14-.8.61-.8.346 0 .94.173 2.325 1.508 1.582 1.582 1.843 2.292 2.733 2.292h2.334c.667 0 1-.334.808-.991-.21-.656-.966-1.607-1.968-2.735-.544-.643-1.36-1.335-1.607-1.681-.346-.445-.247-.643 0-1.038 0 0 2.843-4.006 3.14-5.366z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M12.068 21.666v-9.731h3.266l.489-3.792h-3.755v-2.421c0-1.098.305-1.846 1.88-1.846l2.008-.001v-3.392c-.348-.046-1.539-.149-2.926-.149-2.895 0-4.878 1.767-4.878 5.013v2.797h-3.275v3.792h3.275v9.731h3.916z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  d="M11 7.333c-2.025 0-3.666 1.642-3.666 3.667s1.641 3.667 3.666 3.667 3.667-1.642 3.667-3.667-1.642-3.667-3.667-3.667z"
+                  fill="#fff"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.45 1.525c.635-.247 1.363-.416 2.427-.464 1.067-.049 1.408-.061 4.124-.061 2.716 0 3.056.012 4.123.061 1.064.048 1.791.217 2.427.464.657.255 1.215.597 1.771 1.153.556.557.897 1.114 1.153 1.771.247.635.416 1.363.465 2.427.048 1.066.06 1.407.06 4.123s-.011 3.056-.06 4.123c-.048 1.065-.217 1.792-.465 2.427-.256.657-.597 1.216-1.153 1.771-.557.556-1.114.898-1.771 1.154-.636.247-1.363.416-2.427.464-1.066.049-1.407.061-4.123.061s-3.056-.012-4.123-.061c-1.065-.048-1.791-.217-2.427-.464-.658-.256-1.215-.598-1.771-1.154-.556-.555-.898-1.114-1.153-1.771-.247-.636-.416-1.363-.464-2.427-.049-1.066-.061-1.407-.061-4.123s.011-3.057.061-4.123c.048-1.065.217-1.792.464-2.427.255-.658.597-1.216 1.153-1.771.557-.556 1.114-.898 1.771-1.153zm6.55 15.123c-3.12 0-5.648-2.529-5.648-5.648 0-3.12 2.529-5.648 5.648-5.648 3.12 0 5.648 2.529 5.648 5.648 0 3.12-2.529 5.648-5.648 5.648zm4.774-10.787c-.145-.217-.222-.472-.222-.733 0-.35.139-.685.387-.933.248-.247.584-.386.934-.387.261 0 .516.078.733.223.217.145.386.351.486.593.1.241.126.507.075.763-.051.256-.177.491-.362.676-.185.185-.42.31-.676.361-.256.051-.521.025-.763-.075-.241-.1-.447-.269-.592-.486z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+            <a class="socials__element" href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.557 18.922c1.118.489 1.538-.536 1.538-.536l2.959-14.865c-.023-1.002-1.375-.396-1.375-.396l-16.565 6.5s-.792.28-.722.769c.07.489.699.722.699.722l4.17 1.398s1.258 4.124 1.514 4.916c.233.769.443.792.443.792.233.093.443-.07.443-.07l2.703-2.446 4.194 3.215zm.722-12.768s.582-.349.559 0c0 0 .093.047-.21.373-.28.28-6.873 6.197-7.758 6.99-.07.047-.116.117-.116.21l-.256 2.19c-.047.233-.349.256-.419.047l-1.095-3.588c-.047-.14 0-.303.14-.396l9.156-5.825z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+          </div>
+          <a class="footer__link" href="#">law.hse.ru</a>
+        </div>
+        <div class="footer__down">
+          <div class="footer__down-text">© 2020 ВШЭ Юридический факультет</div>
+          <a class="footer__down-text footer__down-text--margin" href="#">Соглашение</a>
+          <a class="footer__down-text" href="#">Политика конфиденциальности</a>
+          <div class="footer__down-design">Задизайнено с любовью в ❤ MateÇa</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
